@@ -12,19 +12,14 @@ categories: js-in-adventure
 基类与派生类之间通过继承建立纽带，这个纽带从你定义的类开始一层层往上追溯，最终回归到 `Object` 身上。
 
 然而在 `JavaScript` 的世界观中，确是另一番景象。
-内存管理对于浏览器来说可谓是寸土寸金，倘若通过类来实例化一个个独立的对象，
+内存对于浏览器来说可谓是寸土寸金，倘若通过类来实例化一个个独立的对象，
 那么每个对象便占用一份资源，对象越多，资源占用也就越多。
 由此而言，让对象互相共享一部分成员（函数成员和对象成员），可以有效地减少资源浪费。
 
 抛开资源这个话题不议，从设计的角度来看，
 `JavaScript` 从诞生之初的设计理念就是简单、容易上手、再拼抄一些别的语言。
-*Brendan Eich* 当初花了十天设计出了 `JavaScript` 便敷衍 `Netscape` 了事，大神当初的心路历程估计是这样的：<br>
-摆明了想借 `Java` 上位，抄完名字顺便把语法也抄了吧；<br>
-搞 `C` 的那群家伙惹不起，一块儿抄了，反正跟 `Java` 语法也差不多；<br>
-搞什么 `OOP`，`Functional` 才是宇宙的终极信仰。<br>
-要有闭包！要有一等函数！不要副作用……额……最后这个还是算了，这群愚民肯定学不会 -_-|||<br>
-搞什么类类类，吹完封装吹继承，多态够你们吹一辈子，嘿嘿这个我~不~加~<br>
-`self` 的原型继承不错，抄抄抄！
+设计之初并不支持任何继承模式，后期深受 `Self` 语言影响加入了原型继承。
+原型继承比类继承模式上更加简单。
 
 十年后……
 
@@ -50,7 +45,7 @@ function TodoList() {
   this.title = 'an awesome todo list';
   this.storage = [];
 
-  // 为实例添加独有方法。把方法挂载到原型上更好，稍后介绍原型。
+  // 为实例添加独有方法。这样是一种很糟糕的做法，稍后介绍原型
   this.addTodo = function(something) {
     this.storage.push(something);
   };
@@ -64,10 +59,11 @@ myTodo.addTodo('say javascript is awesome 100 times every day!');
 
 ## `new` 一个构造器的幕后发生了什么？
 `new` 操作符用于生成对象的实例。这里的对象指以下两种：
-  1. 自定义的 `function`
-  2. 内置的带构造器的对象
 
-示例
+1. 自定义的 `function`
+2. 内置的带构造器的对象
+
+示例：
 {% highlight javascript linenos %}
 function Foo() {
   this.prop = 'prop in Foo\'s instance';
@@ -78,13 +74,15 @@ var bar = new Date();
 console.log(foo.prop); // "prop in Foo's instance"
 console.log(bar.getFullYear()); // current year
 {% endhighlight %}
-当我们执行 `new` 操作时，共完成了如下几件事情。
-  1. 创建一个临时的空对象 o
-  2. 将 o 的原型指向构造器的原型对象
-  3. 以 o 为上下文执行构造器
-  4. 返回 o
 
-用代码模拟以上过程
+当我们执行 `new` 操作时，共完成了如下几件事情：
+
+1. 创建一个临时的空对象 o
+2. 将 o 的原型指向构造器的原型对象
+3. 以 o 为上下文执行构造器
+4. 返回 o
+
+用代码模拟以上过程：
 {% highlight javascript linenos %}
 function Foo() {
   this.prop = 'prop in Foo\'s instance';
@@ -266,7 +264,7 @@ bar.baseMethod();
 // 继续通过 bar.__proto__.__proto__ 也就是 Foo 的原型上去找，找到了
 // 成功定位到 foo.__proto__.__proto__.baseMethod，设置 `this` 指向的上下文，执行方法
 
-// 实例三：
+// 示例三：
 bar.toString();
 // 这个要一直回溯到 Object.prototype.toString 为止，分析过程和上述一致
 // bar -> DerivedClass.prototype -> BaseClass.prototype -> Function.prototype -> Object.prototype
