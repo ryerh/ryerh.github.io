@@ -18,10 +18,16 @@ $pink:   #f92672;
 
 $high-light: #3e3d32;
 
+// 字体族
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif    !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif          !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif                           !default;
+
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: $font-family-sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -40,8 +46,6 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {

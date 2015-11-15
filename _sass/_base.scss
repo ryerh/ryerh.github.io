@@ -16,6 +16,7 @@ dl, dd, ol, ul, figure {
 html {
     height: 100%;
 }
+
 body {
     min-height: 100%;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
@@ -137,7 +138,8 @@ blockquote {
 
 pre,
 code {
-    font-size: 15px;
+    font-family: $font-family-monospace;
+    font-weight: 300;
     background-color: $dark;
 }
 
