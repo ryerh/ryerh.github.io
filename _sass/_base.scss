@@ -13,7 +13,11 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+    height: 100%;
+}
 body {
+    min-height: 100%;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -127,12 +131,14 @@ blockquote {
 /**
  * Code formatting
  */
+.highlight > pre {
+    border: 1px solid $grey-color-dark;
+}
+
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    background-color: $dark;
 }
 
 code {
@@ -150,7 +156,10 @@ pre {
     }
 }
 
-
+.code pre,
+.gutter pre {
+    margin-bottom: 0;
+}
 
 /**
  * Wrapper
@@ -187,20 +196,8 @@ pre {
 }
 
 
-
 /**
- * Icons
+ * Selection
  */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
+::-moz-selection { background: $black; }
+::selection      { background: $black; }

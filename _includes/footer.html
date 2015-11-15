@@ -2,35 +2,43 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <p class="footer-heading">
+      <span>感谢</span>
+      <a href="https://pages.github.com/" target="_blank">github pages</a>
+      <span>&middot;</span>
+      <a href="https://jekyllrb.com/" target="_blank">jekyll</a>
+      <span>&middot;</span>
+      <a href="http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/" target="_blank">monokai</a>
+    </p>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            {{ site.address }}
+          </li>
+          <li>
+            <i class="fa fa-inbox"></i>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
           <li>
             <i class="fa fa-github"></i>
             <a href="https://github.com/{{ include.username }}" target="_blank">
               {{ site.github_username }}
             </a>
           </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
           <li>
             <i class="fa fa-twitter"></i>
             <a href="https://twitter.com/{{ include.username }}" target="_blank">
               {{ site.twitter_username }}
             </a>
           </li>
-          {% endif %}
         </ul>
       </div>
 

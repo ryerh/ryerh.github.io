@@ -8,6 +8,7 @@
 # Site settings
 title: Ryer the catcher
 email: ryerh@live.com
+address: 中国，北京
 description: H ♥︎ Z
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ryerh.com" # the base hostname & protocol for your site
