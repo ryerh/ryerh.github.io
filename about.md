@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
+title: 我
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+我是黄岩，
+一位旅行爱好者、自由程序员、吃货。
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+我是平原的一掊土，
+我在大海边长大，
+我攀登过最陡峭的山，
+我曾单车穿越滇藏。
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+我写博不为什么，
+但有一天，
+你会看见。
