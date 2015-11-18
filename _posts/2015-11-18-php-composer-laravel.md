@@ -23,6 +23,7 @@ ryer:~ ryer$ composer create-project laravel/laravel PROJECT-NAME --prefer-dist
 
 > 注意：为了避免安装包的时候都要执行两次查询，切记要添加禁用 packagist 的设置。<br>
 > 进入 laravel 项目目录，打开 composer.json，在末尾添加如下配置信息：
+
 ```json
 {
     "repositories": [
