@@ -13,7 +13,7 @@
     }
 
     .c     { color: $gray; font-style: normal } // Comment
-    .err   { color: #a61717; background-color: #e3d2d2 } // Error
+    .err   { color: #a61717; } // Error
     .k     { color: $pink; font-weight: bold } // Keyword
     .o     { color: $pink; font-weight: bold } // Operator
     .cm    { color: #998; font-style: normal } // Comment.Multiline
@@ -47,8 +47,8 @@
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #900; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
-    .nv    { color: #008080 } // Name.Variable
+    .nt    { color: $green } // Name.Tag
+    .nv    { color: $green } // Name.Variable
     //.nx    { color: $orange; } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
