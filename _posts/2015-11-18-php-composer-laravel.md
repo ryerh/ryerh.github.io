@@ -6,17 +6,21 @@ categories: php
 ---
 
 ## OSX 安装 `composer` 包管理器
+
 ```bash
 ryer:~ ryer$ brew install composer
 ```
 
 ## 替换国内源
+
 ```bash
 ryer:~ ryer$ composer config -g repositories.packagist composer http://packagist.phpcomposer.com
 ```
 
 ## 创建 laravel 项目
+
 不要用 laravel installer 安装 laravel 项目，安装过程中会请求 laravel 的安装包，被墙了。
+
 ```bash
 ryer:~ ryer$ composer create-project laravel/laravel PROJECT-NAME --prefer-dist
 ```
