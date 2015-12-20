@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "网易 Ubuntu 镜像"
+title:  "Ubuntu 镜像"
 date:   2015-11-24 14:48:20 +0800
 categories: utility
 ---
 
-### 使用说明
+# 使用说明
 
 以Wily(15.10)为例,
 编辑/etc/apt/sources.list文件,
@@ -17,6 +17,7 @@ deb http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiv
 deb http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
 deb http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiverse
 deb http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
+
 deb-src http://mirrors.163.com/ubuntu/ wily main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
@@ -34,4 +35,6 @@ deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe m
 - vivid(15.04)
 - wily(15.10)
 
-> http://mirrors.163.com/.help/ubuntu.html
+# 参考链接
+
+- [网易源](http://mirrors.163.com/.help/ubuntu.html)
