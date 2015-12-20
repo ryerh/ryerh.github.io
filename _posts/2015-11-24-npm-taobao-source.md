@@ -37,6 +37,7 @@ ryer:~ ryer$ echo '\n#alias for cnpm\nalias cnpm="npm --registry=https://registr
 
 {% highlight bash %}
 ryer:~ ryer$ npm config set registry https://registry.npm.taobao.org
+ryer:~ ryer$ npm config set strict-ssl false
 {% endhighlight %}
 
 > http://npm.taobao.org
