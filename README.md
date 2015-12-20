@@ -1,3 +1,3 @@
-# My github pages
+# 博客
 
-[http://ryerh.com](http://ryerh.com)
+[访问博客](http://ryerh.com)
