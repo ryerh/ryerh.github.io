@@ -7,21 +7,25 @@ categories: css3,selector
 
 ### CSS3 计数规则
 
-1. CSS选择元素从 1 开始计数
-2. 伪类选择器 :nth-child(n) 参数 n 从 0 开始计数
+1. CSS 选择元素从 1 开始计数。
+2. 伪类选择器 `:nth-child(n)` 参数 n 从 0 开始计数。
 
 ### child vs type
-伪类选择器 child 和 type 两个版本，本文的例子只针对 child 版本，下面给出完整对照表
+
+伪类选择器 `child` 和 `type` 两个版本，
+本文的例子只针对 `child` 版本，下面给出完整对照表。
 
 child 选择器    |    | type 选择器
 -------------- | -- | ----------------
-first-child    | -> | first-of-type
-last-child     | -> | last-of-type
-nth-child      | -> | nth-of-type
-nth-last-child | -> | nth-last-of-type
-only-child     | -> | only-of-type
+`first-child`    | -> | `first-of-type`
+`last-child`     | -> | `last-of-type`
+`nth-child`      | -> | `nth-of-type`
+`nth-last-child` | -> | `nth-last-of-type`
+`only-child`     | -> | `only-of-type`
 
-不打算配图了，诸看客自行脑补
+### 实例代码
+
+不打算配图了，诸看客自行脑补。
 
 {% highlight css linenos %}
 /* 第1项 - 不推荐用 :nth-child(1)，语义不明确 */
