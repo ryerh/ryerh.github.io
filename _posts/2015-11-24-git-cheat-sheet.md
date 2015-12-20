@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git 使用指南"
+title:  "Git 命令手册"
 date:   2015-11-24 14:40:33 +0800
 categories: git
 ---
