@@ -15,7 +15,7 @@ ryer:~ $ npm config set strict-ssl false
 # 配置
 
 {% highlight bash %}
-ryer:~ $ npm config ls [-g,]
+ryer:~ $ npm config ls [-g]
 {% endhighlight %}
 
 # 初始化 package.json
