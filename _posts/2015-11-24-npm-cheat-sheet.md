@@ -27,8 +27,7 @@ Major releases(最前一位): * or x
 npm config set <key> <value> [-g]
 npm config get <key>
 npm config delete <key>
-npm config list
-npm config edit
+npm config edit [-g]
 npm get <key>
 npm set <key> <value> [-g]
 
@@ -61,6 +60,12 @@ npm outdated [-g]
 
 # 查看安装的包
 npm ls/ll [-g] --depth 0
+{% endhighlight %}
+
+# 一个很好玩的命令
+
+{% highlight bash %}
+npm explore <pkg> [-g]
 {% endhighlight %}
 
 # 参考链接
