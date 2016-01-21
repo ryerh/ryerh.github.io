@@ -8,8 +8,9 @@ categories: nodejs
 # 通过 Node 版本管理器安装 Node
 
 {% highlight bash %}
-ryer:~ $ npm install -g n
-ryer:~ $ n latest
+# 不支持 Windows
+npm i -g n
+n latest
 {% endhighlight %}
 
 # 参考链接

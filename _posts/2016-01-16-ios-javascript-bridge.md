@@ -5,11 +5,7 @@ date:   2016-01-16 18:34:48 +0800
 categories: jsbridge
 ---
 
-### WebViewJavaScriptBridge
-
-[github repo](https://github.com/marcuswestin/WebViewJavascriptBridge)
-
-[http://marcuswest.in/](http://marcuswest.in/)
+# WebViewJavaScriptBridge
 
 {% highlight javascript %}
 !function(callback) {
@@ -50,3 +46,8 @@ categories: jsbridge
     });
 });
 {% endhighlight %}
+
+# 参考链接
+
+- [github repo](https://github.com/marcuswestin/WebViewJavascriptBridge)
+- [http://marcuswest.in/](http://marcuswest.in/)
