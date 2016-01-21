@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "培训逃跑计"
+title:  "我为什么不提倡培训"
 date:   2014-12-08 16:48:21 +0800
 categories: blog
 ---

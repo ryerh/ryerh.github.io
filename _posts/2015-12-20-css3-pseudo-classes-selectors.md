@@ -5,12 +5,12 @@ date:   2015-12-20 12:41:17 +0800
 categories: css3,selector
 ---
 
-### CSS3 计数规则
+# CSS3 计数规则
 
 1. CSS 选择元素从 1 开始计数。
 2. 伪类选择器 `:nth-child(n)` 参数 n 从 0 开始计数。
 
-### child vs type
+# child vs type
 
 伪类选择器 `child` 和 `type` 两个版本，
 本文的例子只针对 `child` 版本，下面给出完整对照表。
@@ -23,7 +23,7 @@ child 选择器    |    | type 选择器
 `nth-last-child` | -> | `nth-last-of-type`
 `only-child`     | -> | `only-of-type`
 
-### 实例代码
+# 实例代码
 
 不打算配图了，诸看客自行脑补。
 

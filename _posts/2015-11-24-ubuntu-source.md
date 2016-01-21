@@ -2,7 +2,7 @@
 layout: post
 title:  "Ubuntu 镜像"
 date:   2015-11-24 14:48:20 +0800
-categories: utility
+categories: ubuntu
 ---
 
 # 使用说明

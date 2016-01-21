@@ -5,24 +5,24 @@ date:   2015-11-18 17:26:58 +0800
 categories: php
 ---
 
-### OSX 安装 `composer` 包管理器
+# OSX 安装 `composer` 包管理器
 
 {% highlight bash %}
-ryer:~ ryer$ brew install composer
+brew install composer
 {% endhighlight %}
 
-### 替换国内源
+# 替换国内源
 
 {% highlight bash %}
-ryer:~ ryer$ composer config -g repositories.packagist composer http://packagist.phpcomposer.com
+composer config -g repositories.packagist composer http://packagist.phpcomposer.com
 {% endhighlight %}
 
-### 创建 `laravel` 项目
+# 创建 `laravel` 项目
 
 不要用 `laravel installer` 安装 `laravel` 项目，安装过程中会请求 `laravel` 的安装包，被墙了。
 
 {% highlight bash %}
-ryer:~ ryer$ composer create-project laravel/laravel PROJECT-NAME --prefer-dist
+composer create-project laravel/laravel PROJECT-NAME --prefer-dist
 {% endhighlight %}
 
 > 注意：为了避免安装包的时候都要执行两次查询，切记要添加禁用 `packagist` 的设置。<br>
