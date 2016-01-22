@@ -1,3 +1,1 @@
-# 博客
-
-[访问博客](http://ryerh.com)
+# [访问博客](http://ryerh.com)

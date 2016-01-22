@@ -1,4 +1,18 @@
 <head>
+  {% if site.enforce_ssl %}
+  <!--
+    redirect users to the https version of the website.
+    but: only check when on the production domain, as set in _config.yml.
+   -->
+  <script type="text/javascript">
+    var enforce = '{{ site.enforce_ssl }}';
+    var host_match = enforce === location.host;
+    var protocol_match = location.protocol === 'https:';
+    if (host_match && !protocol_match) {
+      location.protocol = "https";
+    }
+  </script>
+  {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
