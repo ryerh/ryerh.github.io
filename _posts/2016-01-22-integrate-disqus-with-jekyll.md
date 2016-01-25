@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "给 Github Pages 增加 SSL 支持"
-date:   2016-01-22 10:51:56 +0800
-categories: github-pages
+title:  "给 Jekyll 集成 Disqus 评论系统"
+date:   2016-01-22 12:08:54 +0800
+categories: disqus
 ---
 
 # SSL 工作原理
