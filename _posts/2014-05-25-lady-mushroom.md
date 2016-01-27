@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "蘑菇小姐"
-date:   2014-05-25 12:00:00 +0800
+date:   2014-05-25 00:00:00 +0800
 categories: blog
 ---
 
