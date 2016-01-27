@@ -8,16 +8,22 @@ categories: git
 # 安装 Git
 
 {% highlight bash %}
+
 # OSX
 brew install git
 
 # Ubuntu
 sudo apt-get install git-core
+
 {% endhighlight %}
+
+
+
 
 # 配置 Git
 
 {% highlight bash %}
+
 # 帮助
 git help [cmd]
 
@@ -25,7 +31,7 @@ git help [cmd]
 git config --list [--system, --global, --local]
 
 # 编辑配置文件
-git config
+git config -e --global
 
 # 配置用户
 git config --global user.name    ryer.huang
@@ -39,59 +45,67 @@ ssh-keygen -t rsa -C ryerh@live.com
 
 # 查看 id_rsa.pub
 cat ~/.ssh/id_rsa.pub
+
 {% endhighlight %}
 
-# 使用 Git
+
+
+
+# 创建项目
 
 {% highlight bash %}
 # 初始化仓库
 mkdir project && cd project
-ryer:project $ git init
-
-# 添加文件
-ryer:project $ git add [file]
-
-# 删除文件
-ryer:project $ git rm [file]
-ryer:project $ git rm --cached [file]
-
-# 重命名
-ryer:project $ git mv [src] [dst]
-
-# 提交代码
-ryer:project $ git commit -m [msg]
-ryer:project $ git commit [file] -m [msg]
-
-# 追加到上次提交
-ryer:project $ git commit -a
-
-# 追加到上次提交
-ryer:project $ git commit --amend [file1]
+git init
 
 # 克隆仓库
-ryer:project $ git clone git@***.git
+git clone git@hello-world.git
+{% endhighlight %}
+
+
+
+
+# 创建项目
+
+{% highlight bash %}
+# 添加文件
+git add . [file]
+
+# 删除文件
+git rm [file]
+git rm --cached [file]
+
+# 重命名
+git mv [src] [dst]
+
+# 提交暂存区的文件
+git commit [file] -m "message" [-v]
+
+# 追加到上次提交
+git commit --amend [file1]
+git commit --amend -m "message"
 
 # 关联远程仓库
-ryer:project $ git remote add origin git@***.git
+git remote add origin git@***.git
 
 # 提交代码
-ryer:project $ git push
+git push
 
 # 不 pull merge，强制 push
-ryer:project $ git push --force
+git push --force
 
 # 更新仓库 [远程 分支:本地分支]
-ryer:project $ git pull [origin master:master]
+git pull [origin master:master]
 
 # git pull 等同于下面
-ryer:project $ git fetch [origin master]
-ryer:project $ git merge origin/master
+git fetch [origin master]
+git merge origin/master
 
 # 删除远程分支
-ryer:project $ git push origin --delete master
+git push origin --delete master
 
 # 远程分支删除后，同步删除本地对应分支
-ryer:project $ git pull/fetch -p
+git pull/fetch -p
 {% endhighlight %}
 
 # 参考链接

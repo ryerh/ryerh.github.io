@@ -6,15 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+timezone: Asia/Shanghai
 title: Ryer the catcher
 email: ryerh@live.com
 address: 中国，北京
 description: H ♥︎ Z
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ryerh.com" # the base hostname & protocol for your site
+url: "http://ryerh.com" # the base hostname & protocol for your site
 # enforce_ssl: ryerh.com
 twitter_username: ryerwong
 github_username:  ryerh
 
 # Build settings
 markdown: kramdown
+
+# Disqus shortname
+disqus_shorname: ryerh
