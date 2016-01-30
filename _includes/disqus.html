@@ -1,16 +1,19 @@
 <div id="disqus_thread"></div>
 
 <script>
-  var disqus_config = function () {
-    this.page.url = '{{ site.url }}';
-    this.page.identifier = '{{ page.id }}';
-  };
-  (function() {
+  !function(global) {
+    if(/(127|localhost)/.test(location.hostname)) return false;
+
+    global.disqus_config = function() {
+      this.page.url = '{{ site.url }}';
+      this.page.identifier = '{{ page.id }}';
+    };
+
     var d = document, s = d.createElement('script');
     s.src = '//{{ site.disqus_shorname }}.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
-  })();
+  }(window);
 </script>
 
 <noscript>
