@@ -20,8 +20,8 @@ sudo npm i npm [-g|--global]
 
 # 版本控制
 Patch releases(最后一位): 1.0 or 1.0.x or ~1.0.4
-Minor releases(中间一位): 1 or 1.x or ^1.0.4
-Major releases(最前一位): * or x
+Minor releases(中间一位): 1   or 1.x   or ^1.0.4
+Major releases(最前一位): *   or x
 
 # 修改配置
 npm config set <key> <value> [-g]
