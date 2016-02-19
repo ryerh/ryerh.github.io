@@ -10,8 +10,9 @@ categories: babel
 
 # 出现前提：
 
+`.babelrc` 配置如下：
+
 {% highlight javascript %}
-// .babelrc 配置如下：
 {
     presets: ['es2015', 'stage-2'],
     plugins: ['transform-runtime'],
@@ -46,8 +47,6 @@ Object.defineProperty(exports, "__esModule", {
 {% highlight javascript %}
 exports.__esModule = true;
 {% endhighlight %}
-
-安卓 4.0.x 允许第 1 种写法，解析到第 2 种就报错了。
 
 # 解决方法：
 
