@@ -15,3 +15,7 @@ polipo socksParentProxy=localhost:1080
 # 测试代理
 http_proxy=http://localhost:8123 curl www.google.com
 {% endhighlight %}
+
+参考链接：
+
+* [shadowsocks-httpproxy](http://supercocoa.github.io/2015/10/24/shadowsocks-httpproxy/)
