@@ -7,9 +7,11 @@ categories: javascript
 
 在 ES6 中，有三种方式声明变量：
 
-1. var   foo = 'foo'
-2. let   bar = 'bar'
-3. const baz = 'baz'
+{% highlight javascript %}
+    1. var   foo = 'foo'
+    2. let   bar = 'bar'
+    3. const baz = 'baz'
+{% endhighlight %}
 
 我平时的最佳实践是：
 
@@ -20,7 +22,7 @@ categories: javascript
 变量值的修改所带来的副作用十分难以捕捉，
 代码严重依赖变量的状态变化。
 
-const 让我专注于状态的转移，
+`const` 让我专注于状态的转移，
 这样变量值的每一个状态都是可以捕捉到的，
 这在代码调试期间非常有益，
 对代码逻辑的理解也更加清晰。
@@ -45,10 +47,12 @@ const 让我专注于状态的转移，
 
 1. 声明一个只有块级作用域的变量
 2. 不可被重复声明
-3. 不可被重复赋值(重复赋值报不报错取决于是否开启 'use strict'，但值永远等于第一次赋的值)
+3. 不可被重复赋值(重复赋值报不报错取决于是否开启 `'use strict'`，但值永远等于第一次赋的值)
 4. 声明时必须初始化
 
 **演示**
+
+{% highlight javascript %}
     // var
     var foo;
     var foo; // ok
@@ -72,3 +76,8 @@ const 让我专注于状态的转移，
     (() => {
         const baz = 3; // ok
     })();
+{% endhighlight %}
+
+参考链接：
+
+[JavaScript ES6+: var, let, or const?](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75#.p0xo6usca)
