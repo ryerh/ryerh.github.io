@@ -62,3 +62,6 @@ function bar() {
 }
 bar();
 {% endhighlight %}
+
+我提交的 bug report
+[The scope of function parameter's default values is wrong.](https://phabricator.babeljs.io/T7204)
