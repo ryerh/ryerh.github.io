@@ -5,10 +5,14 @@ date:   2015-04-16 16:04:54 +0800
 categories: data-structure
 ---
 
-请不要问我这有毛用，因为根本毛用都没有。<br>
-没有错误处理<br>
-封装有点问题<br>
-无继承<br>
+请不要问我这有毛用，因为根本毛用都没有。
+
+没有错误处理
+
+封装有点问题
+
+无继承
+
 Just for fun :-P
 
 {% highlight javascript linenos %}

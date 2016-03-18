@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Colors
-$white:  #f8f8f0;
+$white:  #eaeaea;
 $light:  #f8f8f2;
 $gray:   #75715e;
 $black:  #49483e;
@@ -16,7 +16,7 @@ $green:  #a6e22e;
 $orange: #fd971f;
 $pink:   #f92672;
 
-$high-light: #3e3d32;
+$high-light: #282828;
 
 // 字体族
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif    !default;
@@ -35,7 +35,7 @@ $spacing-unit:     30px;
 
 $text-color:       $white; //#111;
 $background-color: $dark;  //#fafafa;
-$brand-color:      $blue; //#2a7ae2;
+$brand-color:      $blue;  //#2a7ae2;
 
 $grey-color:       $gray;
 $grey-color-light: $light;
