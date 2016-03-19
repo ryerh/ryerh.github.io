@@ -5,7 +5,7 @@
     if(/(127|localhost)/.test(location.hostname)) return false;
 
     global.disqus_config = function() {
-      this.page.url = '{{ site.url }}';
+      this.page.url = '{{ site.url }}{{ page.id }}';
       this.page.identifier = '{{ page.id }}';
     };
 
