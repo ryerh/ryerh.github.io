@@ -1,1 +1,1 @@
-# [访问博客](http://ryerh.com)
+[http://ryerh.com](http://ryerh.com)
