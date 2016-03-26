@@ -27,7 +27,7 @@ $('#fetch').on('click', () => {
         isRequesting = false
     })
 })
-{% endhightlight %}
+{% endhighlight %}
 
 我一直在考虑能否不引入 `isRequesting` 这个变量，就能达到目的。后来读了阮一峰博客中的这个例子，更加吸引了我的兴趣：
 
@@ -41,12 +41,12 @@ function* tickTock() {
     while(true) {
       console.log('tick');
       yield;
-      
+
       console.log('tok');
       yield;
     }
 }
-{% endhightlight %}
+{% endhighlight %}
 
 在 `generator` 的帮助下，不引入副作用便实现了 `tick` 和 `tock` 的切换。我感觉很神奇，但这个 `tickTock` 的示例是同步执行 的，可以通过 `yield` 来暂缓执行。但是我所解决的防止重复 Ajax 请求的问题是异步执行的，`yield` 不能解决我心中的疑惑。
 
