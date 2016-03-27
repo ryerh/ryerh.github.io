@@ -13,9 +13,7 @@ categories: javascript
     3. const baz = 'baz'
 {% endhighlight %}
 
-我平时的最佳实践是：
-
-    尽可能用 const，只有变量需要被重新赋值才使用 let，绝不用 var。
+我平时的最佳实践是：**尽可能用 const，只有变量需要被重新赋值才使用 let，绝不用 var。**
 
 **为什么我会采用上述的最佳实践：**
 
@@ -53,29 +51,29 @@ categories: javascript
 **演示**
 
 {% highlight javascript %}
-    // var
-    var foo;
-    var foo; // ok
-    foo = 1;
-    foo = 2; // ok
+// var
+var foo;
+var foo; // ok
+foo = 1;
+foo = 2; // ok
 
-    // let
-    let bar;
-    let bar; // bad
-    bar = 1;
-    bar = 2; // bad
-    (() => {
-        let bar; // ok
-    })();
+// let
+let bar;
+let bar; // bad
+bar = 1;
+bar = 2; // bad
+(() => {
+    let bar; // ok
+})();
 
-    // const
-    const baz; // bad
-    const baz = 1;
-    baz = 2; // ok
-    console.log(baz); // >> 1
-    (() => {
-        const baz = 3; // ok
-    })();
+// const
+const baz; // bad
+const baz = 1;
+baz = 2; // ok
+console.log(baz); // >> 1
+(() => {
+    const baz = 3; // ok
+})();
 {% endhighlight %}
 
 参考链接：
