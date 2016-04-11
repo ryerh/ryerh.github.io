@@ -46,7 +46,7 @@ npm init [-y|--yes]
 {% highlight bash %}
 
 # 安装包 install
-npm i <pkg> [-S|--save, -D|--save-dev, -O|--save-optional]
+npm i <pkg>@<version> [-g|--global, -S|--save, -D|--save-dev, -O|--save-optional]
 
 # 删除包 uninstall
 npm rm <pkg> [-S, -D, -O]
@@ -60,6 +60,9 @@ npm outdated [-g]
 
 # 查看安装的包
 npm ls/ll [-g] --depth 0
+
+# 锁定依赖版本
+npm shrinkwrap
 {% endhighlight %}
 
 # 一个很好玩的命令
