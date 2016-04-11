@@ -60,6 +60,9 @@ git init
 
 # 克隆仓库
 git clone git@hello-world.git
+
+# 克隆单个分支
+git clone -b master --single-branch git@hello-world.git
 {% endhighlight %}
 
 
