@@ -22,10 +22,11 @@ trusted-host = pypi.douban.com
 
 {% highlight bash %}
 
-sudo apt-get install python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev
-
-pip install lxml
-pip install pyopenssl
+sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
 pip install scrapy
 
 {% endhighlight %}
+
+# 参考链接
+
+* [Scrapy Documentation](http://doc.scrapy.org/en/latest/)
