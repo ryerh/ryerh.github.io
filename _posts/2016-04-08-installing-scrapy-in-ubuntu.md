@@ -5,7 +5,7 @@ date:   2016-04-08 23:32:00 +0800
 categories: python
 ---
 
-# 设置 Pypi 源 (~/.pip/pip.conf)
+# 设置 Pypi 源 `~/.pip/pip.conf`
 
 {% highlight bash %}
 
