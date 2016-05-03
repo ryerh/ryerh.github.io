@@ -46,6 +46,9 @@ ssh-keygen -t rsa -C ryerh@live.com
 # 查看 id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 
+# 测试 SSH 配置
+ssh -T git@github.com
+
 {% endhighlight %}
 
 
