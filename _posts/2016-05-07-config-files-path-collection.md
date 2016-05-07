@@ -13,7 +13,7 @@ categories: linux
 $ sudo nginx -t
 
 # apache
-$ apachectl -t
+$ apachectl -V | grep SERVER_CONFIG_FILE
 
 # my.cnf
 $ mysql --help | grep -A 1 'Default options'
