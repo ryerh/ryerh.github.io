@@ -1,9 +1,21 @@
 ---
 layout: post
-title:  "Webpack 打包 Vue 时 Sass import 重复引入的问题"
+title:  "Sass @import 重复问题"
 date:   2016-03-15 15:08:26 +0800
-categories: javascript
+categories: sass
 ---
+
+2016-05-09 11:31:11 更新
+
+这个重复问题是由于 Sass 本身造成的，见：
+[https://github.com/sass/sass/issues/139](https://github.com/sass/sass/issues/139)。
+
+Sass 目前 `@import` 的实现机制类似于 `include` 文件包含，
+所以导致 `@import` 的模块在 CSS 输出中重复出现，而不是理想中的 `require` 模块加载。
+
+Issue 中提到 Sass 4.x 会修复这个问题。
+
+<<<<<<<<<<<<<<<<<<<<<<<<< 分割线 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 使用 `vue-cli` 执行 `vue init webpack vue-project` 创建一个 `Vue` 项目，
 如果使用了 `<style lang="scss">`，
