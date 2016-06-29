@@ -2,6 +2,9 @@
 
 <script>
   !function(global) {
+    // disable disqus temporarily
+    return false;
+
     if(/(127|localhost)/.test(location.hostname)) return false;
 
     global.disqus_config = function() {
