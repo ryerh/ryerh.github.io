@@ -42,4 +42,16 @@ $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/master/install.sh |
 $ wget https://bootstrap.pypa.io/get-pip.py
 $ sudo python get-pip.py
 
+# shadowsocks json
+{
+  "server": "23.105.204.71",
+  "server_port": 10086,
+  "local_address": "127.0.0.1",
+  "local_port": 1080,
+  "password": "fuck-gfw",
+  "timeout": 300,
+  "method": "aes-256-cfb",
+  "fast_open": false,
+  "workers": 2
+}
 {% endhighlight %}
