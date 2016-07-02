@@ -48,7 +48,7 @@ $ sudo python get-pip.py
   "server_port": 10086,
   "local_address": "127.0.0.1",
   "local_port": 1080,
-  "password": "fuck-gfw",
+  "password": "password",
   "timeout": 300,
   "method": "aes-256-cfb",
   "fast_open": false,
