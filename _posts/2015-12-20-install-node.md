@@ -7,7 +7,7 @@ categories: nodejs
 
 # 通过 Node 版本管理器安装 Node，不支持 Windows ！！
 
-{% highlight bash %}
+``` bash
 安装: npm i -g n && n --help
 
 用法: n [options/env] [cmd] [args]
@@ -52,7 +52,7 @@ categories: nodejs
   use     as
   list    ls
   -       rm
-{% endhighlight %}
+```
 
 # 参考链接
 - [node version manager](https://www.npmjs.com/package/n)

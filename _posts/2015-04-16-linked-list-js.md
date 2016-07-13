@@ -15,8 +15,7 @@ categories: data-structure
 
 Just for fun :-P
 
-{% highlight javascript linenos %}
-
+``` javascript
 /**
  * Created by ryer on 15/4/15.
  */
@@ -86,5 +85,4 @@ for(var i = 0; i &lt; 5; i++) {
 for(var itor = list.begin(); !itor.equals(list.end()); itor = itor.next()) {
     console.log(itor.value());
 }
-
-{% endhighlight %}
+```

@@ -11,7 +11,7 @@ categories: javascript
 
 # 模块导出
 
-{% highlight javascript %}
+``` javascript
 export const InlineExport = { }
 const NormalExport = { }
 const RenameExport = { }
@@ -35,11 +35,11 @@ var DefaultExport = {};
 exports.NormalExport = NormalExport;
 exports.HasRenamed = RenameExport;
 exports.default = DefaultExport;
-{% endhighlight %}
+```
 
 # 模块引入
 
-{% highlight javascript %}
+``` javascript
 import { NormalExport } from 'normal'
 import { HasRenamed as RenameAgain } from 'rename'
 import DefaultExport from 'default'
@@ -88,7 +88,7 @@ function _interopRequireWildcard(obj) {
     return newObj;
   }
 }
-{% endhighlight %}
+```
 
 # 代码非常易读，但是有两个疑问
 
@@ -145,7 +145,7 @@ Babel 依然通过 `exports` 对象来输出模块内的引用，但是增加了
 
 # 前面提到的打包后的代码示例
 
-{% highlight javascript %}
+``` javascript
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
@@ -187,7 +187,7 @@ exports.default = function (instance, Constructor) {
   }
 };
 },{}]},{},[1]);
-{% endhighlight %}
+```
 
 # 参考链接
 

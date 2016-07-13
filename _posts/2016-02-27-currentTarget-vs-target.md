@@ -9,7 +9,7 @@ categories: javascript
 
 `target` 获取触发事件的元素
 
-{% highlight html %}
+``` html
 <div id="outer">
     点击此处 console 输出 outer outer
     <h1 id="inner">点击此处 console 输出 inner outer</h1>
@@ -20,4 +20,4 @@ categories: javascript
     const onClickOuter = e => console.log(e.target.id, e.currentTarget.id);
     $outer.addEventListener('click', onClickOuter);
 </script>
-{% endhighlight %}
+```

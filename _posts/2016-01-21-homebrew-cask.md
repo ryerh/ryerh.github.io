@@ -7,7 +7,7 @@ categories: homebrew
 
 # 安装 Homebrew Cask，需要 XCode
 
-{% highlight bash %}
+``` bash
 # 安装 Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -20,11 +20,11 @@ brew --cache
 # 错误排查
 brew update (两次)
 brew doctor
-{% endhighlight %}
+```
 
 # Homebrew 包管理命令
 
-{% highlight bash %}
+``` bash
 # 安装软件包
 brew install $FORMULA
 
@@ -61,4 +61,4 @@ brew cleanup
 
 # 查看可以被清除的软件包
 brew cleanup -n
-{% endhighlight %}
+```

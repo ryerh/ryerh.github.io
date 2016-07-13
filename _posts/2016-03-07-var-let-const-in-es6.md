@@ -7,11 +7,11 @@ categories: javascript
 
 在 ES6 中，有三种方式声明变量：
 
-{% highlight javascript %}
+``` javascript
     1. var   foo = 'foo'
     2. let   bar = 'bar'
     3. const baz = 'baz'
-{% endhighlight %}
+```
 
 我平时的最佳实践是：**尽可能用 const，只有变量需要被重新赋值才使用 let，绝不用 var。**
 
@@ -50,7 +50,7 @@ categories: javascript
 
 **演示**
 
-{% highlight javascript %}
+``` javascript
 // var
 var foo;
 var foo; // ok
@@ -74,7 +74,7 @@ console.log(baz); // >> 1
 (() => {
     const baz = 3; // ok
 })();
-{% endhighlight %}
+```
 
 参考链接：
 

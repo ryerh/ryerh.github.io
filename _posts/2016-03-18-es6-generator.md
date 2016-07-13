@@ -16,7 +16,7 @@ categories: javascript
 
 # Part I -- 源码加注解
 
-{% highlight javascript %}
+``` javascript
 
 // 获得一个遍历器对象
 const runner = gen(3);
@@ -57,12 +57,12 @@ function* gen(x) {
   */;
 }
 
-{% endhighlight %}
+```
 
 
 # Part II -- Babel 转换后的代码
 
-{% highlight javascript %}
+``` javascript
 
 "use strict";
 
@@ -105,4 +105,4 @@ function gen(x) {
   }, _marked[0], this);
 }
 
-{% endhighlight %}
+```

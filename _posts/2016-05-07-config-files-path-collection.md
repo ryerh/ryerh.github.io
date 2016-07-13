@@ -7,7 +7,7 @@ categories: linux
 
 # Unix/Linux
 
-{% highlight bash %}
+``` bash
 
 # nginx.conf
 $ sudo nginx -t
@@ -27,4 +27,4 @@ $ php-fpm -t
 # .gitconfig
 $ git config --system|global|local -e
 
-{% endhighlight %}
+```

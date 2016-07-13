@@ -7,7 +7,7 @@ categories: python
 
 # 设置 Pypi 源 `~/.pip/pip.conf`
 
-{% highlight bash %}
+``` bash
 
 [global]
 index-url = http://pypi.douban.com/simple
@@ -15,17 +15,17 @@ index-url = http://pypi.douban.com/simple
 [install]
 trusted-host = pypi.douban.com
 
-{% endhighlight %}
+```
 
 
 # 在全新安装的 Ubuntu 中安装 Scrapy
 
-{% highlight bash %}
+``` bash
 
 sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
 pip install scrapy
 
-{% endhighlight %}
+```
 
 # 参考链接
 

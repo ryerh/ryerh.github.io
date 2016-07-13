@@ -7,14 +7,14 @@ categories: proxy
 
 ShadowSocks 默认的代理是基于 SOCKS 5 的，除了浏览器以外使用起来不太方便，Polipo 给本地开启全局 HTTP 代理。
 
-{% highlight bash %}
+``` bash
 # 安装 Polipo
 brew install polipo
 # 在 8123 端口代理到 ShadowSocks 的 1080 端口
 polipo socksParentProxy=localhost:1080
 # 测试代理
 http_proxy=http://localhost:8123 curl www.google.com
-{% endhighlight %}
+```
 
 参考链接：
 

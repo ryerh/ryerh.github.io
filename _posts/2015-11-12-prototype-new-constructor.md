@@ -38,7 +38,7 @@ categories: js-in-adventure
 ## 什么是构造器？
 不要诧异，构造器是一个函数，用于生成实例。
 如果一个函数打算被设计为构造器，就请不要使用 `return` 语句。
-{% highlight javascript linenos %}
+``` javascript
 // TodoList 构造器
 function TodoList() {
   // 为实例添加独有属性
@@ -55,7 +55,7 @@ function TodoList() {
 var myTodo = new TodoList();
 console.log(myTodo.title);
 myTodo.addTodo('say javascript is awesome 100 times every day!');
-{% endhighlight %}
+```
 
 ## `new` 一个构造器的幕后发生了什么？
 `new` 操作符用于生成对象的实例。这里的对象指以下两种：
@@ -64,7 +64,7 @@ myTodo.addTodo('say javascript is awesome 100 times every day!');
 2. 内置的带构造器的对象
 
 示例：
-{% highlight javascript linenos %}
+``` javascript
 function Foo() {
   this.prop = 'prop in Foo\'s instance';
 }
@@ -73,7 +73,7 @@ var foo = new Foo();
 var bar = new Date();
 console.log(foo.prop); // "prop in Foo's instance"
 console.log(bar.getFullYear()); // current year
-{% endhighlight %}
+```
 
 当我们执行 `new` 操作时，共完成了如下几件事情：
 
@@ -83,7 +83,7 @@ console.log(bar.getFullYear()); // current year
 4. 返回 o
 
 用代码模拟以上过程：
-{% highlight javascript linenos %}
+``` javascript
 function Foo() {
   this.prop = 'prop in Foo\'s instance';
 }
@@ -103,7 +103,7 @@ var createdObject = createObject(Foo);
 
 console.log(newObject.prop); // "prop in Foo's instance"
 console.log(createdObject.prop); // "prop in Foo's instance"
-{% endhighlight %}
+```
 
 ## 什么是原型？
 在四人组 GOF 的著作《设计模式 —— 可复用面向对象软件的基础》中，有一种对象创建型模式叫 "原型模式"，其概念十分简单。
@@ -111,7 +111,7 @@ console.log(createdObject.prop); // "prop in Foo's instance"
 在传统的 OOP 开发中，最简单的创建对象的方式莫过于直接通过 `new` 一个 `class` 来获得类的实例。
 
 考虑下面这个例子，有一个 `TodoItem` 类：
-{% highlight javascript linenos %}
+``` javascript
 class TodoItem {
     constructor() {
         this.title = null;
@@ -128,11 +128,11 @@ var item2 = new TodoItem();
 item2.title = 'item';
 item2.date = new Date();
 // ...
-{% endhighlight %}
+```
 如果对象的字段更多，赋值更加复杂，那么直接通过类来实例化对象将变得更加繁杂。
 
 接下来通过原型模式改造 `TodoItem` 类：
-{% highlight javascript linenos %}
+``` javascript
 class TodoItem {
     constructor() {
         this.title = null;
@@ -154,12 +154,12 @@ proto.date = new Date();
 var item1 = proto.clone();
 var item2 = proto.clone();
 // ...
-{% endhighlight %}
+```
 原型模式就好比是抄作业，学霸写完作业之后，全班人以学霸的作业为原型，原模原样地获得复制品。
 
 ## 什么是原型链？
 *注:* 以下 `JavaScript` 代码均为模拟代码，并不能被执行，仅用来模拟原理。
-{% highlight javascript linenos %}
+``` javascript
 // Part I，模拟原生 JavaScript 的对象创建过程
 // =======================================
 // 万物始于 Object，而 Object 基于它的原型所创建
@@ -209,10 +209,10 @@ bar.__proto__ = Foo.prototype;
 // 以 Object 的原型为基础，通过 new 操作符实例化新对象
 var baz = new Object();
 baz.__proto__ = Object.prototype;
-{% endhighlight %}
+```
 
 ## 如何利用原型模拟面向对象编程？
-{% highlight javascript linenos %}
+``` javascript
 // 定义基类
 function BaseClass(baseProp) {
   this.baseProp = baseProp;
@@ -245,11 +245,11 @@ console.log(foo.baseProp, bar.baseProp);
 foo.baseMethod();
 bar.baseMethod();
 bar.derivedMethod();
-{% endhighlight %}
+```
 
 ## `JavaScript` 如何通过原型链寻找原型方法的？
 以上面的代码为例：
-{% highlight javascript linenos %}
+``` javascript
 // 示例一：
 foo.baseMethod();
 // 因为 foo 对象本身并没有 baseMethod 这个属性
@@ -268,7 +268,7 @@ bar.baseMethod();
 bar.toString();
 // 这个要一直回溯到 Object.prototype.toString 为止，分析过程和上述一致
 // bar -> DerivedClass.prototype -> BaseClass.prototype -> Function.prototype -> Object.prototype
-{% endhighlight %}
+```
 
 ### 参考
 - [JavaScript Object Layout](www.mollypages.org/misc/js.mp)

@@ -7,8 +7,6 @@ categories: blog
 
 使用 cnpm install 可以避免 node-gyp 编译的时候卡死
 
-{% highlight bash %}
-
+``` bash
 $ node-gyp install --dist-url https://npm.taobao.org/mirrors/node
-
-{% endhighlight %}
+```

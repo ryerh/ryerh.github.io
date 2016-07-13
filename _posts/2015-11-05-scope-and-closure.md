@@ -37,30 +37,31 @@ categories: js-in-adventure
 
 ## 1、全局作用域
 在代码顶层声明的变量都是全局变量
-{% highlight javascript linenos %}
+``` javascript
 // 在顶层声明的变量
 var g_value = 'hello, kitty';
 // 从这里开始，任何位置都可以获取和修改 g_value
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 在 if 语句中修改 g_value
 if(true) {
   g_value.replace('kitty', 'world');
 }
 console.log(g_value); // OK!
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 在 function 中修改 g_value
 !function() {
   g_value = 'where is kitty?';
 }();
 console.log(g_value); // OK!
-{% endhighlight %}
+```
 
 附注：在 `JavaScript` 中，所有全局变量都是 `windows` 对象的属性
-{% highlight javascript linenos %}
+
+``` javascript
 // 声明一个全局变量
 var g_value = 'hello, kitty';
 console.log(g_value === window.g_value); // OK! -> true
@@ -70,20 +71,22 @@ function g_func() {
   // ...
 }
 console.log(g_func === window.g_func); // OK! -> true
-{% endhighlight %}
+```
 
 无论何处，只要没有使用 `var` 关键词声明变量，
 都将得到全局变量，你没有任何理由拒绝使用 `var` ！
-{% highlight javascript linenos %}
+
+``` javascript
 // 在函数中没有用 var 关键字声明变量，并立即执行这个函数
 !function() {
   none_var_value = 'this is dangerous!!!';
 }();
 console.log(none_var_value); // Buggy, but OK!
-{% endhighlight %}
+```
 ## 2、局部作用域
 `for` 和 `if` 等语法块无法隔离作用域
-{% highlight javascript linenos %}
+
+``` javascript
   // 代码开始，全局作用域开始
   for(int i = 0; i < 10; i++) {
     // 仍然处于全局作用域
@@ -103,10 +106,10 @@ console.log(none_var_value); // Buggy, but OK!
   }
   console.log(i_am); // OK!
   // 代码结束，全局作用域结束
-{% endhighlight %}
+```
 
 只有 `function` 内部可以隔离函数作用域
-{% highlight javascript linenos %}
+``` javascript
 // 代码开始，全局作用域开始
 !function() {
   // 局部作用域开始
@@ -116,10 +119,10 @@ console.log(none_var_value); // Buggy, but OK!
 }();
 console.log(l_value); // Referrence Error!
 // 代码结束，全局作用域结束
-{% endhighlight %}
+```
 
 **示例一**
-{% highlight javascript linenos %}
+``` javascript
 // 在 `jQuery` 项目代码中，我们常看到类似的代码：
 $(function() {
   // 变量缓存
@@ -130,9 +133,9 @@ $(function() {
   // ...
 });
 // 便是为了利用匿名函数隔离内部所有变量的作用域
-{% endhighlight %}
+```
 **示例二**
-{% highlight javascript linenos %}
+``` javascript
 // 我们还经常看到一些自调用匿名函数(SIAF)的写法：
 !function() {
   // ...
@@ -143,11 +146,11 @@ $(function() {
   // ...
 })();
 // 也是为了利用匿名函数隔离内部所有变量的作用域
-{% endhighlight %}
+```
 
 ## 3、函数作用域
 函数的定义可以嵌套，内部作用域如下：
-{% highlight javascript linenos %}
+``` javascript
 // 代码开始，全局作用域开始
 function AAA() {
   // 函数 AAA 作用域开始
@@ -163,11 +166,11 @@ function AAA() {
   // 函数 AAA 作用域结束
 }
 // 代码结束，全局作用域结束
-{% endhighlight %}
+```
 
 ## 4、词法作用域
 一个变量在他被声明的作用域链中都是可见的，其值由最近一层的定义所决定
-{% highlight javascript linenos %}
+``` javascript
 var outer_value = 'outside';
 
 !function() {
@@ -184,11 +187,11 @@ var outer_value = 'outside';
 
 }();
 console.log(outer_value); // OK! -> outside
-{% endhighlight %}
+```
 
 ## 5、闭包
 闭包与词法作用域的关系十分紧密
-{% highlight javascript linenos %}
+``` javascript
 function create_factory(device) {
   // 1. 此处声明 product 变量
   var product = 'I created a(n) ' + device;
@@ -217,7 +220,7 @@ var sangsung_creator = create_factory('Galaxy');
 console.log(apple_creator('4s')); // OK! -> I created a(n) iPhone4s!
 console.log(sangsung_creator('S6')); // OK! -> I created a(n) GalaxyS6!
 // 事实证明，身为局部变量的 product 的确没有被销毁
-{% endhighlight %}
+```
 
 当内层函数引用了外层的变量，就被称为**闭包**，被引用的变量就叫**闭包变量**。
 **闭包变量**不会被立即销毁，所以不要滥用闭包
@@ -228,33 +231,33 @@ console.log(sangsung_creator('S6')); // OK! -> I created a(n) GalaxyS6!
 只要一个变量被声明，
 那么在它所处的整个词法作用域中都是可见的
 
-{% highlight javascript linenos %}
+``` javascript
 // 直接访问一个从未声明的变量
 console.log(none_defined); // Referrence Error!
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 先声明后访问
 var defined_value = 'hello, kitty!';
 console.log(defined_value); // OK!
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 先访问后声明
 console.log(will_define); // undefined!
 // ...
 var will_define = 'hello, kitty!';
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 先访问后声明变形一
 !function() {
   console.log(will_define); // undefined!
 }();
 var will_define = 'hello, kitty!';
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 先访问后声明变形二
 // 在当前作用域声明 defined_value
 var defined_value = 'hello, kitty!';
@@ -275,10 +278,10 @@ var defined_value = 'hello, kitty!';
 
 // 函数执行结束，退回到全局作用域，defined_value 的值并没有变化
 console.log(defined_value); // OK! ->  hello, kitty!
-{% endhighlight %}
+```
 
 变量提升有一个特例，就是当声明的变量是函数的时候
-{% highlight javascript linenos %}
+``` javascript
 // 方式一：使用 var 声明函数
 
 // 先访问后声明
@@ -288,9 +291,9 @@ func(); // TypeError, func is not a function.
 var func = function() {
   // ...
 }
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 方式二：不使用 var 声明函数
 
 // 先访问后声明
@@ -303,7 +306,7 @@ function func() {
 
 // 上述两种情况是由 `ECMAScript` 标准决定的
 // 使用时要注意区别
-{% endhighlight %}
+```
 
 上面的一切是因为 `JavaScript` 在定义它们的作用域里运行，
 而不是在执行它们的作用域里运行。
@@ -311,15 +314,15 @@ function func() {
 ## 7、动态作用域
 在 `JavaScript` 中，`this` 指针的指向是动态绑定的，
 较之 `C++/Java` 中的 `this` 稍有出入
-{% highlight javascript linenos %}
+``` javascript
 // 直接在全局作用域中访问 `this`
 console.log(this === window); // OK! -> true
-{% endhighlight %}
+```
 
-{% highlight javascript linenos %}
+``` javascript
 // 直接在全局作用域中访问 `this`
 console.log(this === window); // OK! -> true
-{% endhighlight %}
+```
 
 此处简述动态作用域和 `this` 的用法，在另一篇关于 `prototype-new-constructor` 中有详述。
 

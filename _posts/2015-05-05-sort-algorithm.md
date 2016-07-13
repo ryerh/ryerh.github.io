@@ -13,8 +13,8 @@ categories: blog
 - 归并排序
 - 快速排序
 
-{% highlight c++ linenos %}
 
+``` cpp
 //
 //  main.cpp
 //  Data Structure
@@ -35,8 +35,6 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
-
-
 
 //
 //  sort.h
@@ -237,5 +235,4 @@ void CreateTestUnit(function<void(vector<int> &)> sort) {
 }
 
 #endif // Data_Structure_sort_h
-
-{% endhighlight %}
+```

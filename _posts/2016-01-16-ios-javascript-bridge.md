@@ -7,7 +7,7 @@ categories: jsbridge
 
 # WebViewJavaScriptBridge
 
-{% highlight javascript %}
+``` javascript
 !function(callback) {
     // jQuery ready
     $(function() {
@@ -45,7 +45,7 @@ categories: jsbridge
         });
     });
 });
-{% endhighlight %}
+```
 
 # 参考链接
 

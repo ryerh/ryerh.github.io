@@ -12,13 +12,13 @@ categories: babel
 
 `.babelrc` 配置如下：
 
-{% highlight javascript %}
+``` javascript
 {
     presets: ['es2015', 'stage-2'],
     plugins: ['transform-runtime'],
     comments: false
 }
-{% endhighlight %}
+```
 
 # 出现问题的系统：
 
@@ -26,9 +26,9 @@ categories: babel
 
 # 报错：
 
-{% highlight javascript %}
+``` javascript
 Type Error::Cannot assign readonly property '__esModule' of ...
-{% endhighlight %}
+```
 
 # 原因：
 
@@ -36,17 +36,17 @@ Babel 会把 ES6 import & export 转换成 CommonJS 的 require & exports。
 
 所以你会在 Babel 每个内部模块开头看到这句话：
 
-{% highlight javascript %}
+``` javascript
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-{% endhighlight %}
+```
 
 问题出现在几处不标准的模块上，用的是下面的写法：
 
-{% highlight javascript %}
+``` javascript
 exports.__esModule = true;
-{% endhighlight %}
+```
 
 # 解决方法：
 

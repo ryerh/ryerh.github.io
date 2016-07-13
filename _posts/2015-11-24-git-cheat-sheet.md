@@ -7,7 +7,7 @@ categories: git
 
 # 安装 Git
 
-{% highlight bash %}
+``` bash
 
 # OSX
 brew install git
@@ -15,14 +15,14 @@ brew install git
 # Ubuntu
 sudo apt-get install git-core
 
-{% endhighlight %}
+```
 
 
 
 
 # 配置 Git
 
-{% highlight bash %}
+``` bash
 
 # 帮助
 git help [cmd]
@@ -49,14 +49,14 @@ cat ~/.ssh/id_rsa.pub
 # 测试 SSH 配置
 ssh -T git@github.com
 
-{% endhighlight %}
+```
 
 
 
 
 # 创建项目
 
-{% highlight bash %}
+``` bash
 # 初始化仓库
 mkdir project && cd project
 git init
@@ -66,14 +66,14 @@ git clone git@hello-world.git
 
 # 克隆单个分支
 git clone -b master --single-branch git@hello-world.git
-{% endhighlight %}
+```
 
 
 
 
 # 创建项目
 
-{% highlight bash %}
+``` bash
 # 添加文件
 git add . [file]
 
@@ -112,7 +112,7 @@ git push origin --delete master
 
 # 远程分支删除后，同步删除本地对应分支
 git pull/fetch -p
-{% endhighlight %}
+```
 
 # 参考链接
 - [Git 远程操作详解](http://www.ruanyifeng.com/blog/2014/06/git_remote.html?bsh_bid=439347102)

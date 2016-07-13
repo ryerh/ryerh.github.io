@@ -7,7 +7,7 @@ categories: npm
 
 # NPM 控制命令
 
-{% highlight bash %}
+``` bash
 # 帮助
 npm help <cmd>
 
@@ -39,11 +39,11 @@ npm get prefix
 
 # 初始化 package.json
 npm init [-y|--yes]
-{% endhighlight %}
+```
 
 # NPM 包管理命令
 
-{% highlight bash %}
+``` bash
 
 # 安装包 install
 npm i <pkg>@<version> [-g|--global, -S|--save, -D|--save-dev, -O|--save-optional]
@@ -63,13 +63,13 @@ npm ls/ll [-g] --depth 0
 
 # 锁定依赖版本
 npm shrinkwrap
-{% endhighlight %}
+```
 
 # 一个很好玩的命令
 
-{% highlight bash %}
+``` bash
 npm explore <pkg> [-g]
-{% endhighlight %}
+```
 
 # 参考链接
 - [淘宝 npm 源](http://npm.taobao.org)

@@ -7,7 +7,7 @@ categories: linux
 
 # linux 系统安装后的工具集
 
-{% highlight bash %}
+``` bash
 # centos mirror
 $ mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 $ wget http://mirrors.163.com/.help/CentOS7-Base-163.repo
@@ -54,4 +54,4 @@ $ sudo python get-pip.py
   "fast_open": false,
   "workers": 2
 }
-{% endhighlight %}
+```

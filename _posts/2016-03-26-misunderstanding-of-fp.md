@@ -7,7 +7,7 @@ categories: functional-programming
 
 因为学艺不精，一直以来，我把函数式编程中副作用的概念看得非常之重。一贯秉承所有 JavaScript 变量都用 `const` 来声明的原则。但这并不容易做到，有的时候我不得不引入 `let` 和副作用。比如下面这个例子：
 
-{% highlight javascript %}
+``` javascript
 // 防止连续发出多个 Ajax 请求
 let isRequesting = false
 
@@ -27,11 +27,11 @@ $('#fetch').on('click', () => {
         isRequesting = false
     })
 })
-{% endhighlight %}
+```
 
 我一直在考虑能否不引入 `isRequesting` 这个变量，就能达到目的。后来读了阮一峰博客中的这个例子，更加吸引了我的兴趣：
 
-{% highlight javascript %}
+``` javascript
 const clock = tickTock();
 clock.next(); // tick
 clock.next(); // tock
@@ -46,7 +46,7 @@ function* tickTock() {
       yield;
     }
 }
-{% endhighlight %}
+```
 
 在 `generator` 的帮助下，不引入副作用便实现了 `tick` 和 `tock` 的切换。我感觉很神奇，但这个 `tickTock` 的示例是同步执行 的，可以通过 `yield` 来暂缓执行。但是我所解决的防止重复 Ajax 请求的问题是异步执行的，`yield` 不能解决我心中的疑惑。
 

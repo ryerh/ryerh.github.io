@@ -8,30 +8,30 @@ categories: javascript
 
 `.babelrc` 参数
 
-{% highlight javascript %}
+``` javascript
 {
     presets: ['es2015', 'es2015-loose', 'stage-2'],
     plugins: ['transform-runtime'],
     comments: false
 }
-{% endhighlight %}
+```
 
 
 input source code
 
-{% highlight javascript %}
+``` javascript
 let foo = 'outer';
 function bar(func = x => foo) {
     let foo = 'inner';
     console.log(func()); // outer
 }
 bar();
-{% endhighlight %}
+```
 
 
 Expected output:
 
-{% highlight javascript %}
+``` javascript
 'use strict';
 
 var foo = 'outer';
@@ -43,12 +43,12 @@ function bar() {
     console.log(func()); // I should get 'outer' here
 }
 bar();
-{% endhighlight %}
+```
 
 
 Actual output:
 
-{% highlight javascript %}
+``` javascript
 'use strict';
 
 var foo = 'outer';
@@ -61,7 +61,7 @@ function bar() {
     console.log(func()); // however, I got an 'inner'
 }
 bar();
-{% endhighlight %}
+```
 
 我提交的 bug report
 

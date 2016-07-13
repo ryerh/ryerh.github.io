@@ -11,7 +11,7 @@ categories: ubuntu
 编辑/etc/apt/sources.list文件,
 在文件最前面添加以下条目(操作前请做好相应备份)
 
-{% highlight bash %}
+``` bash
 deb http://mirrors.163.com/ubuntu/ wily main restricted universe multiverse
 deb http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiverse
 deb http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
@@ -23,7 +23,7 @@ deb-src http://mirrors.163.com/ubuntu/ wily-security main restricted universe mu
 deb-src http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
-{% endhighlight %}
+```
 
 或者下载相应版本的sources.list,
 覆盖/etc/apt/sources.list即可(操作前请做好相应备份)

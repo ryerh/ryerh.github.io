@@ -32,8 +32,7 @@ Google的字体可以用360的前端公用库完美替换，而Gravatar就没这
 5. PHP 5.5以上，在php.ini中开启OPcache
 6. 其他你愿意折腾的优化方式
 
-{% highlight javascript linenos %}
-
+``` javascript
 /**
  * 方案一：直接禁用Google字体
  * 分别在前台、后台、登陆界面移除Google字体的CSS
@@ -77,5 +76,4 @@ opcache.max_accelerated_files=4000
 opcache.revalidate_freq=60
 opcache.fast_shutdown=1
 opcache.enable_cli=1
-
-{% endhighlight %}
+```

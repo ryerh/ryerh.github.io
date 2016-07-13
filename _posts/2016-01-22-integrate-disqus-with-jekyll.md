@@ -15,7 +15,7 @@ categories: disqus
 
 # 3. 在 Jekyll 模板中嵌入代码
 
-{% highlight html %}
+``` html
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -38,7 +38,7 @@ categories: disqus
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endhighlight %}
+```
 
 # 参考链接
 1. [configuration-variables](https://disqus.com/admin/universalcode/#configuration-variables)

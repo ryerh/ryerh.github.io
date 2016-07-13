@@ -27,7 +27,7 @@ child 选择器    |    | type 选择器
 
 不打算配图了，诸看客自行脑补。
 
-{% highlight css linenos %}
+``` css
 /* 第1项 - 不推荐用 :nth-child(1)，语义不明确 */
 span:first-child {
     color: navy;
@@ -87,4 +87,4 @@ span:nth-child(odd) {
 span:nth-child(even) {
     color: green;
 }
-{% endhighlight %}
+```

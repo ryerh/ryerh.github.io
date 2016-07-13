@@ -5,8 +5,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-timezone: Asia/Shanghai
+###############################################################################
+# Custom site settings
+###############################################################################
 title: Ryer the catcher
 email: ryerh@live.com
 address: 中国，北京
@@ -16,9 +17,8 @@ url: "http://ryerh.com" # the base hostname & protocol for your site
 # enforce_ssl: ryerh.com
 twitter_username: ryerwong
 github_username:  ryerh
-
-# Build settings
-markdown: kramdown
-
-# Disqus shortname
 disqus_shorname: ryerh
+
+markdown: redcarpet
+redcarpet:
+  extensions: [fenced_code_blocks]
