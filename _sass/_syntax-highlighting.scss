@@ -5,7 +5,8 @@
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #eef;
+      background: transparent;
+      border: 1px solid $grey-color-dark;
     }
 
     & > pre {

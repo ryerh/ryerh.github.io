@@ -7,7 +7,7 @@ categories: npm
 
 执行 `npm install` 的时候，一直到中途就崩溃，提示：
 
-``` bash
+```bash
 [root@localhost ~]# npm i
 npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
 npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
@@ -17,7 +17,7 @@ Killed ............] - fetchMetadata: sill mapToRegistry uri https://registry.np
 
 用 `dmesg` 查一下内存日志：
 
-``` bash
+```bash
 [root@localhost sales]# dmesg
 [1982048.529636] Out of memory in UB 317592: OOM killed process 2946 (npm) score 0 vm:1506164kB, rss:237752kB, swap:120052kB
 [1982101.466212] Out of memory in UB 317592: OOM killed process 2955 (npm) score 0 vm:1510820kB, rss:244616kB, swap:111180kB

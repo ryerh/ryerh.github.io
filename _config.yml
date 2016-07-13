@@ -19,6 +19,9 @@ twitter_username: ryerwong
 github_username:  ryerh
 disqus_shorname: ryerh
 
-markdown: redcarpet
-redcarpet:
-  extensions: [fenced_code_blocks]
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
