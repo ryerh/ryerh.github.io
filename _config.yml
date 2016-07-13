@@ -8,7 +8,7 @@
 ###############################################################################
 # Custom site settings
 ###############################################################################
-title: Ryer the catcher
+title: RYER THE CATCHER
 email: ryerh@live.com
 address: 中国，北京
 description: H ♥︎ Z
@@ -16,7 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ryerh.com" # the base hostname & protocol for your site
 # enforce_ssl: ryerh.com
 twitter_username: ryerwong
-github_username:  ryerh
+github_username: ryerh
 disqus_shorname: ryerh
 
 markdown: kramdown
