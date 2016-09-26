@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "npm killed 原因"
-date:   2016-07-13 10:57:05 +0800
-categories: npm
+title:  "undefined"
+date:   2016-09-26 14:20:36 +0800
+categories: js
 ---
 
 动态语言一时爽，代码重构火葬场。
