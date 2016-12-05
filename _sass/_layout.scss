@@ -236,3 +236,18 @@
     text-align: justify;
   }
 }
+
+.layout-post {
+  & > header,
+  & > footer {
+    border-color: transparent;
+
+    & * {
+      visibility: hidden;
+    }
+
+    &:hover .site-title {
+      visibility: visible;
+    }
+  }
+}
