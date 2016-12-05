@@ -1,8 +1,9 @@
 ---
+title: 为什么 generator 忽略第一次 next 调用的参数值呢？
+date: 2016-03-15 07:08:26 Z
+categories:
+- javascript
 layout: post
-title:  "为什么 generator 忽略第一次 next 调用的参数值呢？"
-date:   2016-03-15 15:08:26 +0800
-categories: javascript
 ---
 
 # 前提

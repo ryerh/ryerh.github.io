@@ -1,8 +1,9 @@
 ---
+title: 我对函数式编程的一处误解
+date: 2016-03-26 09:04:18 Z
+categories:
+- functional-programming
 layout: post
-title:  "我对函数式编程的一处误解"
-date:   2016-03-26 17:04:18 +0800
-categories: functional-programming
 ---
 
 因为学艺不精，一直以来，我把函数式编程中副作用的概念看得非常之重。一贯秉承所有 JavaScript 变量都用 `const` 来声明的原则。但这并不容易做到，有的时候我不得不引入 `let` 和副作用。比如下面这个例子：

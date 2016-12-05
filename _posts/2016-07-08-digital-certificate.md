@@ -1,8 +1,9 @@
 ---
+title: 开发数字签名应用
+date: 2016-07-08 09:25:14 Z
+categories:
+- cryptology
 layout: post
-title:  "开发数字签名应用"
-date:   2016-07-08 17:25:14 +0800
-categories: cryptology
 ---
 
 ## 数字签名概念

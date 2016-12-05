@@ -1,8 +1,9 @@
 ---
+title: Ouroboros
+date: 2012-07-14 18:24:00 Z
+categories:
+- blog
 layout: post
-title:  "Ouroboros"
-date:   2012-07-15 02:24:00 +0800
-categories: blog
 ---
 
 # 你要是在麦田里遇到了我

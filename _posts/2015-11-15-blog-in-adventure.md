@@ -1,8 +1,9 @@
 ---
+title: 博客历险计
+date: 2015-11-15 12:06:18 Z
+categories:
+- blog
 layout: post
-title:  "博客历险计"
-date:   2015-11-15 20:06:18 +0800
-categories: blog
 ---
 
 博客迁移的历程从没间断，

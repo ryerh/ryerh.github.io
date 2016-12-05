@@ -1,8 +1,9 @@
 ---
+title: Polipo 开启 ShadowSocks HTTP 代理
+date: 2016-02-19 11:07:38 Z
+categories:
+- proxy
 layout: post
-title:  "Polipo 开启 ShadowSocks HTTP 代理"
-date:   2016-02-19 19:07:38 +0800
-categories: proxy
 ---
 
 ShadowSocks 默认的代理是基于 SOCKS 5 的，除了浏览器以外使用起来不太方便，Polipo 给本地开启全局 HTTP 代理。

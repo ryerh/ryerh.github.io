@@ -1,8 +1,9 @@
 ---
+title: WordPress 加速
+date: 2014-12-06 21:11:00 Z
+categories:
+- wordpress
 layout: post
-title:  "WordPress 加速"
-date:   2014-12-07 05:11 +0800
-categories: wordpress
 ---
 
 因为Google被墙，Gravatar的CDN连接不上，致使国内所有的WordPress博客都受到了影响。

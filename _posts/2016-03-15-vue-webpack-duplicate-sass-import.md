@@ -1,8 +1,9 @@
 ---
+title: Sass @import 重复问题
+date: 2016-03-15 07:08:26 Z
+categories:
+- sass
 layout: post
-title:  "Sass @import 重复问题"
-date:   2016-03-15 15:08:26 +0800
-categories: sass
 ---
 
 2016-05-09 11:31:11 更新

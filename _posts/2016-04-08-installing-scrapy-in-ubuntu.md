@@ -1,8 +1,9 @@
 ---
+title: Ubuntu 安装 Python Scrapy，修改 Pip 源
+date: 2016-04-08 15:32:00 Z
+categories:
+- python
 layout: post
-title:  "Ubuntu 安装 Python Scrapy，修改 Pip 源"
-date:   2016-04-08 23:32:00 +0800
-categories: python
 ---
 
 # 设置 Pypi 源 `~/.pip/pip.conf`

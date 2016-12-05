@@ -1,8 +1,9 @@
 ---
+title: 机器人三定律
+date: 2013-07-28 16:00:00 Z
+categories:
+- blog
 layout: post
-title:  "机器人三定律"
-date:   2013-07-29 00:00:00 +0800
-categories: blog
 ---
 
 - 机器人必须保护人类的整体利益不受伤害。

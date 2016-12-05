@@ -1,8 +1,9 @@
 ---
+title: 本科四年不完全书单
+date: 2015-12-23 11:28:57 Z
+categories:
+- books
 layout: post
-title:  "本科四年不完全书单"
-date:   2015-12-23 19:28:57 +0800
-categories: books
 ---
 
 # 哈哈我读过不少书呢

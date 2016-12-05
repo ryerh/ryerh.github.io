@@ -1,9 +1,11 @@
 ---
+title: 如何保留 Sublime Text 配置文件的注释
+date: 2016-02-16 05:11:47 Z
+categories:
+- sublime-text
+tags:
+- ediotr
 layout: post
-title:  "如何保留 Sublime Text 配置文件的注释"
-date:   2016-02-16 13:11:47 +0800
-categories: sublime-text
-tags: ediotr
 ---
 
 Sublime Text 编辑器的用户配置文件 `preferences.sublime-settings`，会因为 JSON 排序而丢失所有的注释。

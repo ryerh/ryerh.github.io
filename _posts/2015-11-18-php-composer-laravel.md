@@ -1,8 +1,9 @@
 ---
+title: 使用国内 composer 源创建 laravel 项目
+date: 2015-11-18 09:26:58 Z
+categories:
+- php
 layout: post
-title:  "使用国内 composer 源创建 laravel 项目"
-date:   2015-11-18 17:26:58 +0800
-categories: php
 ---
 
 # OSX 安装 `composer` 包管理器

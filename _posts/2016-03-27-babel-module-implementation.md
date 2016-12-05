@@ -1,8 +1,9 @@
 ---
+title: 分析 Babel 转换 ES6 module 的原理
+date: 2016-03-27 07:04:18 Z
+categories:
+- javascript
 layout: post
-title:  "分析 Babel 转换 ES6 module 的原理"
-date:   2016-03-27 15:04:18 +0800
-categories: javascript
 ---
 
 写这篇分析是为了追踪 Babel 的一处模块化转换 bug，暂时还没有理清头绪，所以写下此详细分析，等分析出结果再更新此文。

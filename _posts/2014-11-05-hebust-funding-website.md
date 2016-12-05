@@ -1,8 +1,9 @@
 ---
+title: console.log
+date: 2014-11-05 05:16:18 Z
+categories:
+- blog
 layout: post
-title:  "console.log"
-date:   2014-11-05 13:16:18 +0800
-categories: blog
 ---
 
 转眼[资助中心](http://202.206.64.115/funding/)的网站已经上线半年了，这半年来不容易。<br>

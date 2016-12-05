@@ -1,8 +1,9 @@
 ---
+title: CSS3 伪类选择器之数量选定
+date: 2015-12-20 04:41:17 Z
+categories:
+- css
 layout: post
-title:  "CSS3 伪类选择器之数量选定"
-date:   2015-12-20 12:41:17 +0800
-categories: css
 ---
 
 # CSS3 计数规则

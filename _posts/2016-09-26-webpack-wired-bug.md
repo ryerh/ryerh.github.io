@@ -1,8 +1,9 @@
 ---
+title: 一个 Webpack 导致的诡异 bug
+date: 2016-09-26 06:20:36 Z
+categories:
+- webpack
 layout: post
-title:  "一个 Webpack 导致的诡异 bug"
-date:   2016-09-26 14:20:36 +0800
-categories: webpack
 ---
 
 一个 Webpack + React + React-bootstrap-table 项目，

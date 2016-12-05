@@ -1,8 +1,9 @@
 ---
+title: OSX Homebrew Cask 包管理
+date: 2016-01-21 09:06:30 Z
+categories:
+- homebrew
 layout: post
-title:  "OSX Homebrew Cask 包管理"
-date:   2016-01-21 17:06:30 +0800
-categories: homebrew
 ---
 
 # 安装 Homebrew Cask，需要 XCode

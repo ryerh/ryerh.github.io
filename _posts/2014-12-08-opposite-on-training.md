@@ -1,8 +1,9 @@
 ---
+title: 我为什么不提倡培训
+date: 2014-12-08 08:48:21 Z
+categories:
+- blog
 layout: post
-title:  "我为什么不提倡培训"
-date:   2014-12-08 16:48:21 +0800
-categories: blog
 ---
 
 今日下午两点来到某城，某培训公司面试，记录下今日的故事。

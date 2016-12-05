@@ -1,8 +1,9 @@
 ---
+title: 各种 Config 文件的存放路径
+date: 2016-05-07 08:40:09 Z
+categories:
+- linux
 layout: post
-title:  "各种 Config 文件的存放路径"
-date:   2016-05-07 16:40:09 +0800
-categories: linux
 ---
 
 # Unix/Linux

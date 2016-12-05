@@ -1,8 +1,9 @@
 ---
+title: 关于 ES6 var, let, const 的思考
+date: 2016-03-07 03:17:23 Z
+categories:
+- javascript
 layout: post
-title:  "关于 ES6 var, let, const 的思考"
-date:   2016-03-07 11:17:23 +0800
-categories: javascript
 ---
 
 在 ES6 中，有三种方式声明变量：

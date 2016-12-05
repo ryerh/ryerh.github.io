@@ -1,8 +1,9 @@
 ---
+title: 逃不出的作用域
+date: 2015-11-05 11:42:38 Z
+categories:
+- js-in-adventure
 layout: post
-title:  "逃不出的作用域"
-date:   2015-11-05 19:42:38 +0800
-categories: js-in-adventure
 ---
 
 一个变量的生命由始而终，

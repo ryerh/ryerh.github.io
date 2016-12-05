@@ -1,8 +1,9 @@
 ---
+title: 蘑菇小姐
+date: 2014-05-24 16:00:00 Z
+categories:
+- blog
 layout: post
-title:  "蘑菇小姐"
-date:   2014-05-25 00:00:00 +0800
-categories: blog
 ---
 
 章鱼有三颗心脏 心痛的时候是不是很疼<br>

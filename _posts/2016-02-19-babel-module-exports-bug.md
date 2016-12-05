@@ -1,8 +1,9 @@
 ---
+title: 'Babel bug: cannot assign readonly property'
+date: 2016-02-19 11:07:38 Z
+categories:
+- babel
 layout: post
-title:  "Babel bug: cannot assign readonly property"
-date:   2016-02-19 19:07:38 +0800
-categories: babel
 ---
 
 今天 Debug 了一天（哭了好几次），因为 Babel 转换的代码在安卓 4.0.x 怎么都跑不起来。

@@ -1,8 +1,9 @@
 ---
+title: npm killed 原因
+date: 2016-07-13 02:57:05 Z
+categories:
+- npm
 layout: post
-title:  "npm killed 原因"
-date:   2016-07-13 10:57:05 +0800
-categories: npm
 ---
 
 执行 `npm install` 的时候，一直到中途就崩溃，提示：

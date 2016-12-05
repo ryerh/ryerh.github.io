@@ -1,8 +1,9 @@
 ---
+title: 双链表的 JavaScript 实现
+date: 2015-04-16 08:04:54 Z
+categories:
+- data-structure
 layout: post
-title:  "双链表的 JavaScript 实现"
-date:   2015-04-16 16:04:54 +0800
-categories: data-structure
 ---
 
 请不要问我这有毛用，因为根本毛用都没有。

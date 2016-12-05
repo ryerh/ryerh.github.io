@@ -1,8 +1,9 @@
 ---
+title: Git 命令手册
+date: 2015-11-24 06:40:33 Z
+categories:
+- git
 layout: post
-title:  "Git 命令手册"
-date:   2015-11-24 14:40:33 +0800
-categories: git
 ---
 
 # 安装 Git

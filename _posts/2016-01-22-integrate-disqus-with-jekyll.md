@@ -1,8 +1,9 @@
 ---
+title: 给 Jekyll 集成 Disqus 评论系统
+date: 2016-01-22 04:08:54 Z
+categories:
+- disqus
 layout: post
-title:  "给 Jekyll 集成 Disqus 评论系统"
-date:   2016-01-22 12:08:54 +0800
-categories: disqus
 ---
 
 # 1. 注册 Disqus

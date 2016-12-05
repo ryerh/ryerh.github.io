@@ -1,8 +1,9 @@
 ---
+title: 教务系统秒评
+date: 2014-12-10 03:16:03 Z
+categories:
+- javascript
 layout: post
-title:  "教务系统秒评"
-date:   2014-12-10 11:16:03 +0800
-categories: javascript
 ---
 
 教务评估好麻烦呀，研究了一下，用下面四行代码可以秒评（全好评）。

@@ -1,8 +1,9 @@
 ---
+title: 追溯原型
+date: 2015-11-12 11:42:38 Z
+categories:
+- js-in-adventure
 layout: post
-title:  "追溯原型"
-date:   2015-11-12 19:42:38 +0800
-categories: js-in-adventure
 ---
 
 `JavaScript` 不具备面向对象（Object-Oriented-Programming）编程的能力。

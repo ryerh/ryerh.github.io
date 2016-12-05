@@ -1,8 +1,9 @@
 ---
+title: 安装 Node 最新版本
+date: 2015-12-20 09:15:40 Z
+categories:
+- nodejs
 layout: post
-title:  "安装 Node 最新版本"
-date:   2015-12-20 17:15:40 +0800
-categories: nodejs
 ---
 
 # 通过 Node 版本管理器安装 Node，不支持 Windows ！！

@@ -1,8 +1,9 @@
 ---
+title: 分析 JavaScript 内存泄漏
+date: 2016-04-01 07:23:59 Z
+categories:
+- javascript
 layout: post
-title:  "分析 JavaScript 内存泄漏"
-date:   2016-04-01 15:23:59 +0800
-categories: javascript
 ---
 
 最近还在学习 ES6，虽然 TC39 终于把当年的 Harmony 方案标准化，

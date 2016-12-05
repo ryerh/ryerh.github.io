@@ -1,8 +1,9 @@
 ---
+title: 给 Github Pages 增加 SSL 支持
+date: 2016-01-22 02:51:56 Z
+categories:
+- github-pages
 layout: post
-title:  "给 Github Pages 增加 SSL 支持"
-date:   2016-01-22 10:51:56 +0800
-categories: github-pages
 ---
 
 # 尚未成功 :(

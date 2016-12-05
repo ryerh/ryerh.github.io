@@ -1,8 +1,9 @@
 ---
+title: NPM 命令手册
+date: 2015-11-24 06:55:38 Z
+categories:
+- npm
 layout: post
-title:  "NPM 命令手册"
-date:   2015-11-24 14:55:38 +0800
-categories: npm
 ---
 
 # NPM 控制命令

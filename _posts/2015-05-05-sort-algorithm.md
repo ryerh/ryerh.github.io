@@ -1,8 +1,9 @@
 ---
+title: 一组 C++ 实现的排序算法
+date: 2015-05-05 14:53:00 Z
+categories:
+- blog
 layout: post
-title:  "一组 C++ 实现的排序算法"
-date:   2015-05-05 22:53:00 +0800
-categories: blog
 ---
 
 用 C++ 实现的一组排序，部分功能用到了 C++11 的特性，旧的编译器下编译可能通不过。
