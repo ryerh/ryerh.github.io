@@ -1,6 +1,6 @@
 ---
 title: console.log
-date: 2014-11-05 05:16:18 Z
+date: 2014-11-05 13:16:18 +08:00
 categories:
 - blog
 layout: post

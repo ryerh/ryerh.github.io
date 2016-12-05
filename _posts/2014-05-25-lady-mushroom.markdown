@@ -1,6 +1,6 @@
 ---
 title: 蘑菇小姐
-date: 2014-05-24 16:00:00 Z
+date: 2014-05-25 00:00:00 +08:00
 categories:
 - blog
 layout: post

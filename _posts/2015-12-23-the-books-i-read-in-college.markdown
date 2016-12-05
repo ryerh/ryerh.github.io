@@ -1,6 +1,6 @@
 ---
 title: 本科四年不完全书单
-date: 2015-12-23 11:28:57 Z
+date: 2015-12-23 19:28:57 +08:00
 categories:
 - books
 layout: post

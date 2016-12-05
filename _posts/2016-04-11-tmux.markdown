@@ -1,6 +1,6 @@
 ---
 title: Tmux 快捷键 & 速查表
-date: 2016-04-11 09:14:01 Z
+date: 2016-04-11 17:14:01 +08:00
 categories:
 - linux
 layout: post

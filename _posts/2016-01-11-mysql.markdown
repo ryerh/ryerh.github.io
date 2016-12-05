@@ -1,6 +1,6 @@
 ---
 title: Mysql 服务控制命令
-date: 2016-01-11 07:38:09 Z
+date: 2016-01-11 15:38:09 +08:00
 categories:
 - mysql
 layout: post

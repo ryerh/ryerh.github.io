@@ -1,6 +1,6 @@
 ---
 title: 如何保留 Sublime Text 配置文件的注释
-date: 2016-02-16 05:11:47 Z
+date: 2016-02-16 13:11:47 +08:00
 categories:
 - sublime-text
 tags:

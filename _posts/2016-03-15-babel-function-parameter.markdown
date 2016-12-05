@@ -1,6 +1,6 @@
 ---
 title: Babel 参数默认值转换 bug
-date: 2016-03-15 07:08:26 Z
+date: 2016-03-15 15:08:26 +08:00
 categories:
 - javascript
 layout: post

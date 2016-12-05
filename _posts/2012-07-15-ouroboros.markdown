@@ -1,6 +1,6 @@
 ---
 title: Ouroboros
-date: 2012-07-14 18:24:00 Z
+date: 2012-07-15 02:24:00 +08:00
 categories:
 - blog
 layout: post

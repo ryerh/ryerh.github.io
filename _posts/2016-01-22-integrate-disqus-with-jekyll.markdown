@@ -1,6 +1,6 @@
 ---
 title: 给 Jekyll 集成 Disqus 评论系统
-date: 2016-01-22 04:08:54 Z
+date: 2016-01-22 12:08:54 +08:00
 categories:
 - disqus
 layout: post

@@ -1,6 +1,6 @@
 ---
 title: linux 初始化工具
-date: 2016-06-29 02:49:27 Z
+date: 2016-06-29 10:49:27 +08:00
 categories:
 - linux
 layout: post

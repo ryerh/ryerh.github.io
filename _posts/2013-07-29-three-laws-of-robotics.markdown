@@ -1,6 +1,6 @@
 ---
 title: 机器人三定律
-date: 2013-07-28 16:00:00 Z
+date: 2013-07-29 00:00:00 +08:00
 categories:
 - blog
 layout: post

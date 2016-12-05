@@ -1,6 +1,6 @@
 ---
 title: Jekyll 测试页
-date: 1999-12-31 16:00:00 Z
+date: 2000-01-01 00:00:00 +08:00
 permalink: "/jekyll-post-demo.html"
 published: false
 categories:

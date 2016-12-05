@@ -1,6 +1,6 @@
 ---
 title: Mac(Yosemite)下配置 MAMP 环境
-date: 2015-03-25 17:55:00 Z
+date: 2015-03-26 01:55:00 +08:00
 categories:
 - blog
 layout: post

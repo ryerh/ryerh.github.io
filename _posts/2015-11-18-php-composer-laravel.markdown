@@ -1,6 +1,6 @@
 ---
 title: 使用国内 composer 源创建 laravel 项目
-date: 2015-11-18 09:26:58 Z
+date: 2015-11-18 17:26:58 +08:00
 categories:
 - php
 layout: post

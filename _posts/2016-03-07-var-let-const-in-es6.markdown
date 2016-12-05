@@ -1,6 +1,6 @@
 ---
 title: 关于 ES6 var, let, const 的思考
-date: 2016-03-07 03:17:23 Z
+date: 2016-03-07 11:17:23 +08:00
 categories:
 - javascript
 layout: post

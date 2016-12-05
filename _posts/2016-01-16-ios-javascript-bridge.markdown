@@ -1,6 +1,6 @@
 ---
 title: JavaScript 与 iOS 通过 WebView Bridge 通信
-date: 2016-01-16 10:34:48 Z
+date: 2016-01-16 18:34:48 +08:00
 categories:
 - jsbridge
 layout: post

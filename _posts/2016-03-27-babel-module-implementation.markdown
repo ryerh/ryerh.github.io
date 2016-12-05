@@ -1,6 +1,6 @@
 ---
 title: 分析 Babel 转换 ES6 module 的原理
-date: 2016-03-27 07:04:18 Z
+date: 2016-03-27 15:04:18 +08:00
 categories:
 - javascript
 layout: post

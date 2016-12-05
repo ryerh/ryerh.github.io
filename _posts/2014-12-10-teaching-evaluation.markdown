@@ -1,6 +1,6 @@
 ---
 title: 教务系统秒评
-date: 2014-12-10 03:16:03 Z
+date: 2014-12-10 11:16:03 +08:00
 categories:
 - javascript
 layout: post

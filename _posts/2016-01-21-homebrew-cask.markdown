@@ -1,6 +1,6 @@
 ---
 title: OSX Homebrew Cask 包管理
-date: 2016-01-21 09:06:30 Z
+date: 2016-01-21 17:06:30 +08:00
 categories:
 - homebrew
 layout: post

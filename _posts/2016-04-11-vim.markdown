@@ -1,6 +1,6 @@
 ---
 title: VIM 配置文件
-date: 2016-04-11 10:40:01 Z
+date: 2016-04-11 18:40:01 +08:00
 categories:
 - vim
 layout: post

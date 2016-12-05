@@ -1,6 +1,6 @@
 ---
 title: 我对函数式编程的一处误解
-date: 2016-03-26 09:04:18 Z
+date: 2016-03-26 17:04:18 +08:00
 categories:
 - functional-programming
 layout: post

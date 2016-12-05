@@ -1,6 +1,6 @@
 ---
 title: 各种 Config 文件的存放路径
-date: 2016-05-07 08:40:09 Z
+date: 2016-05-07 16:40:09 +08:00
 categories:
 - linux
 layout: post

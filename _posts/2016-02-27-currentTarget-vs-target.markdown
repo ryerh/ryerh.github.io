@@ -1,6 +1,6 @@
 ---
 title: currentTarget vs target
-date: 2016-02-27 12:14:30 Z
+date: 2016-02-27 20:14:30 +08:00
 categories:
 - javascript
 layout: post

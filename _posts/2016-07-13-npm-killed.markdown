@@ -1,6 +1,6 @@
 ---
 title: npm killed 原因
-date: 2016-07-13 02:57:05 Z
+date: 2016-07-13 10:57:05 +08:00
 categories:
 - npm
 layout: post

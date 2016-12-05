@@ -1,6 +1,6 @@
 ---
 title: 安装 Node 最新版本
-date: 2015-12-20 09:15:40 Z
+date: 2015-12-20 17:15:40 +08:00
 categories:
 - nodejs
 layout: post

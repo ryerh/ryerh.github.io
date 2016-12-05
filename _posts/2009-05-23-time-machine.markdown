@@ -1,6 +1,6 @@
 ---
 title: 为什么我们不能使用时光机器
-date: 2009-05-22 16:00:00 Z
+date: 2009-05-23 00:00:00 +08:00
 categories:
 - blog
 layout: post

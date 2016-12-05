@@ -1,6 +1,6 @@
 ---
 title: 一生所爱
-date: 2016-01-22 11:07:32 Z
+date: 2016-01-22 19:07:32 +08:00
 categories:
 - music
 layout: post

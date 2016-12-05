@@ -1,6 +1,6 @@
 ---
 title: 一个 Webpack 导致的诡异 bug
-date: 2016-09-26 06:20:36 Z
+date: 2016-09-26 14:20:36 +08:00
 categories:
 - webpack
 layout: post

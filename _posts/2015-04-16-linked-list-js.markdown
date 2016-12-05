@@ -1,6 +1,6 @@
 ---
 title: 双链表的 JavaScript 实现
-date: 2015-04-16 08:04:54 Z
+date: 2015-04-16 16:04:54 +08:00
 categories:
 - data-structure
 layout: post

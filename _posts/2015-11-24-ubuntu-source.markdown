@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 镜像
-date: 2015-11-24 06:48:20 Z
+date: 2015-11-24 14:48:20 +08:00
 categories:
 - ubuntu
 layout: post

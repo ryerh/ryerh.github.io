@@ -1,6 +1,6 @@
 ---
 title: node-gyp 指定源码
-date: 2016-05-07 11:07:19 Z
+date: 2016-05-07 19:07:19 +08:00
 categories:
 - blog
 layout: post

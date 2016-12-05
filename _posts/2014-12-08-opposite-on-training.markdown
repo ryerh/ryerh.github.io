@@ -1,6 +1,6 @@
 ---
 title: 我为什么不提倡培训
-date: 2014-12-08 08:48:21 Z
+date: 2014-12-08 16:48:21 +08:00
 categories:
 - blog
 layout: post

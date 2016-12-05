@@ -1,6 +1,6 @@
 ---
 title: WordPress 加速
-date: 2014-12-06 21:11:00 Z
+date: 2014-12-07 05:11:00 +08:00
 categories:
 - wordpress
 layout: post

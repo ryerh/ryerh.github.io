@@ -1,6 +1,6 @@
 ---
 title: Gulp 工作流
-date: 2015-12-10 12:04:54 Z
+date: 2015-12-10 20:04:54 +08:00
 categories:
 - gulp
 layout: post

@@ -1,6 +1,6 @@
 ---
 title: NPM 命令手册
-date: 2015-11-24 06:55:38 Z
+date: 2015-11-24 14:55:38 +08:00
 categories:
 - npm
 layout: post

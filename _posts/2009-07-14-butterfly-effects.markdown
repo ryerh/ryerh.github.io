@@ -1,6 +1,6 @@
 ---
 title: 蝴蝶效应
-date: 2009-07-13 16:00:00 Z
+date: 2009-07-14 00:00:00 +08:00
 categories:
 - blog
 layout: post

@@ -1,6 +1,6 @@
 ---
 title: 'Babel bug: cannot assign readonly property'
-date: 2016-02-19 11:07:38 Z
+date: 2016-02-19 19:07:38 +08:00
 categories:
 - babel
 layout: post
