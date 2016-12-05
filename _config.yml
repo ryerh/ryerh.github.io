@@ -11,15 +11,11 @@ collections:
 email: ryerh@live.com
 address: Beijing, China
 description: H ♥︎ Z
-baseurl: 
+baseurl:
 url: http://ryerh.com
 twitter_username: ryerwong
 github_username: ryerh
 disqus_shorname: ryerh
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
 host: 0.0.0.0
 port: 3004
