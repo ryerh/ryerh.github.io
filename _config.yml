@@ -1,3 +1,4 @@
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -5,9 +6,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-###############################################################################
-# Custom site settings
-###############################################################################
+#
+# Global Configuration
+# -----------------------------------------------------------------------------
 title: RYER THE CATCHER
 email: ryerh@live.com
 address: 中国，北京
@@ -25,3 +26,14 @@ kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
+
+#
+# Global Configuration
+# -----------------------------------------------------------------------------
+
+
+#
+# Serve Command Options
+# -----------------------------------------------------------------------------
+host: 0.0.0.0
+port: 3004
