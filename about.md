@@ -1,7 +1,7 @@
 ---
+title: 我
+permalink: "/me/"
 layout: page
-title: "我"
-permalink: /me/
 ---
 
 我是黄岩，<br>

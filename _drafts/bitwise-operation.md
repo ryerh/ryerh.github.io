@@ -1,8 +1,9 @@
 ---
+title: 理解位运算
+date: 2016-01-30 16:48:00 Z
+categories:
+- blog
 layout: post
-title:  "理解位运算"
-date:   2016-01-31 00:48:00 +0800
-categories: blog
 ---
 
 计算机工作的本质是在处理数据，文本、图片、流媒体、程序二进制代码都可以概括为数据。

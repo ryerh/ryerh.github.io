@@ -1,0 +1,17 @@
+---
+title: Mysql 服务控制命令
+date: 2016-01-11 07:38:09 Z
+categories:
+- mysql
+layout: post
+---
+
+# Mysql 启动 | 关闭 | 重启 | 状态
+
+``` bash
+# OSX
+mysql.server start | stop | restart | status
+
+# Linux
+service mysql start | stop | restart | status
+```

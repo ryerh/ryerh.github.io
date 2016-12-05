@@ -1,0 +1,55 @@
+---
+title: Mac(Yosemite)下配置 MAMP 环境
+date: 2015-03-25 17:55:00 Z
+categories:
+- blog
+layout: post
+---
+
+新买了 Macbook Pro，工作环境自然迁移到了 OSX Yosemite 10.10.2，问题也就接二连三出现了。
+
+1. OSX 自带 Apache2.4，表示惊喜
+2. OSX 自带 Php5.5，表示惊喜
+3. OSX 不带 Mysql，表示惊喜 :(
+
+既然苹果自带了 Apache 和 Php，那本当是件好事，
+可苹果的隐私策略做得很是周到，修改了很多 httpd.conf 和 php.ini 的配置，导致如下使用不便：
+
+[Apache]
+
+1. 默认没有加载 php 模块
+2. 默认 Apache 以 _www 用户身份运行，导致各种 403 权限问题
+3. 默认 Web 文档位于 /Library/WebServer/Documents/
+
+[Php]
+
+1. 使用 127.0.0.1 可以连接数据库，而 localhost 却不行
+
+目前已经成功解决了上述问题，汇总如下：
+
+1. 到 Mysql 官网下载数据库服务器，安装成功后在【系统偏好设置】->【Mysql】中开启服务
+2. 修改 httpd.conf，把加载 php 模块前面的 # 号去掉
+3. 修改 httpd.conf，把 User _www 改为 User [用户名]
+4. 修改 httpd.conf，把 Gourp _www 改为 Group [用户组]
+5. 修改 httpd.conf，把 DocumentRoot 和 Directory 修改为你想要的位置，比如 /User/foo 目录下
+6. 修改 php.ini，把 pdo_mysql.default_socket，mysql.default_socket，mysqli.default_socket 的值都修改为 /private/tmp/mysql.sock
+
+另外送上几个命令
+
+检查 httpd.conf 语法错误
+
+    sudo apachectl -t
+
+启动|关闭|重启 Apache
+
+    sudo apachectl start|stop|restart
+
+httpd.conf 路径
+
+    /etc/apache2/httpd.conf
+
+php.ini 路径
+
+    /etc/php.ini
+
+完

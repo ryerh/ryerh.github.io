@@ -1,0 +1,174 @@
+---
+title: Gulp 工作流
+date: 2015-12-10 12:04:54 Z
+categories:
+- gulp
+layout: post
+---
+
+# gulpfile.js
+
+``` javascript
+/**
+ * Gulp 依赖
+ */
+var autoprefixer = require('gulp-autoprefixer');
+var babelify     = require('babelify');
+var browserify   = require('gulp-browserify');
+var browser_sync = require('browser-sync').create();
+var del          = require('del');
+var gulp         = require('gulp');
+var jade         = require('gulp-jade');
+var minify_css   = require('gulp-minify-css');
+var plumber      = require('gulp-plumber');
+var reload       = browser_sync.reload;
+var rename       = require('gulp-rename');
+var sass         = require('gulp-sass');
+var sourcemaps   = require('gulp-sourcemaps');
+var uglify       = require('gulp-uglify');
+
+/**
+ * 路径
+ */
+var BROWSERIFY_IN    = 'es6/[^_]*.js';
+var BROWSERIFY_OUT   = 'dist/static/coin/js';
+var BROWSERIFY_WATCH = 'es6/*.js';
+
+var IMG_IN           = 'img/**';
+var IMG_OUT          = 'dist/static/coin/img';
+var IMG_WATCH        = 'img/**';
+
+var JADE_IN          = 'jade/[^_]*.jade';
+var JADE_OUT         = 'dist/templates/coin';
+var JADE_WATCH       = 'jade/*.jade';
+
+var SCSS_IN          = 'scss/app.scss';
+var SCSS_OUT         = 'dist/static/coin/css';
+var SCSS_WATCH       = 'scss/*.scss';
+
+var CLEAN_FILES = [
+    'dist/static/coin/**',
+    'dist/templates/coin/**'
+];
+
+/**
+ * Jade 预编译
+ */
+gulp.task('jade', () => {
+    var JADE_OPTIONS = {
+        pretty: true
+    };
+
+    return gulp.src(JADE_IN)
+        // 处理错误, 以下同理
+        .pipe(plumber())
+        .pipe(jade(JADE_OPTIONS))
+        .pipe(gulp.dest(JADE_OUT))
+        // 刷新浏览器, 以下同理
+        .pipe(reload({stream: true}));
+});
+
+/**
+ * Scss 预编译
+ * 入口文件: scss/app.scss
+ */
+gulp.task('scss', () => {
+    var PREFIXER_OPTIONS = [
+        'ie_mob >= 10',
+        'ios >= 6.1',
+        'android >= 2.3'
+    ];
+
+    var SCSS_OPTIONS = {
+        outputStyle: 'expanded'
+    };
+
+    return gulp.src(SCSS_IN)
+        .pipe(sourcemaps.init())
+        .pipe(sass(SCSS_OPTIONS).on('error', sass.logError))
+        .pipe(autoprefixer(PREFIXER_OPTIONS))
+        .pipe(gulp.dest(SCSS_OUT))
+        // 生成压缩版本
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minify_css())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(SCSS_OUT))
+        .pipe(reload({stream: true}));
+});
+
+/**
+ * Babel 预编译 + Browserify 打包
+ */
+gulp.task('browserify', () => {
+    return gulp.src(BROWSERIFY_IN)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(browserify({
+            transform: [
+                babelify.configure({
+                    presets: ['es2015']
+                })
+            ]
+        }))
+        .pipe(gulp.dest(BROWSERIFY_OUT))
+        // 生成压缩版本
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(BROWSERIFY_OUT))
+        .pipe(reload({stream: true}));
+});
+
+/**
+ * 图片压缩
+ * 太慢, 算了, 以后再说吧
+ */
+gulp.task('imagemin', () => {
+    var IMAGE_OPTIONS = {
+        optimizationLevel: 3, // between 0 - 7
+        progressive: true,
+        interlaced: true
+    };
+
+    return gulp.src(IMG_IN)
+        .pipe(plumber())
+        //.pipe(imagemin(IMAGE_OPTIONS))
+        .pipe(gulp.dest(IMG_OUT))
+        .pipe(reload({stream: true}));
+});
+
+/**
+ * 项目清理
+ * dev 和 dist 都清掉
+ */
+gulp.task('clean', () => {
+    return del(CLEAN_FILES);
+});
+
+/**
+ * 代码检查
+ */
+// 老子代码写这么屌, 从来不检查 (#‵′)凸
+
+/**
+ * 启动 Browser-Sync 和文件变动监控
+ */
+gulp.task('watch', () => {
+    browser_sync.init({
+        proxy: 'localhost:9999'
+    });
+
+    gulp.watch(BROWSERIFY_WATCH, ['browserify']);
+    gulp.watch(JADE_WATCH, ['jade']);
+    gulp.watch(SCSS_WATCH, ['scss']);
+    gulp.watch(IMG_WATCH, ['imagemin']);
+});
+
+/**
+ * 默认 task
+ * 启动 watcher 和 browser-sync
+*/
+gulp.task('default', ['watch'], () => {
+    console.log('Winter is coming, and now my watch shall begins...');
+});
+```
