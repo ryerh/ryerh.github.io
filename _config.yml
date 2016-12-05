@@ -1,6 +1,6 @@
 ---
 title: RYER THE CATCHER
-timezone: UTC
+timezone: Asia/Shanghai
 collections:
   posts:
     title: Posts
@@ -11,7 +11,7 @@ collections:
 email: ryerh@live.com
 address: 中国，北京
 description: H ♥︎ Z
-baseurl: ''
+baseurl: 
 url: http://ryerh.com
 twitter_username: ryerwong
 github_username: ryerh
