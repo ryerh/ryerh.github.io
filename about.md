@@ -1,6 +1,6 @@
 ---
 title: 我
-permalink: "/me/"
+permalink: "/about/"
 layout: page
 ---
 
