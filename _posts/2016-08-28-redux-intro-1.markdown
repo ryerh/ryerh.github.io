@@ -1,6 +1,7 @@
 ---
 title: 根 Reducer 的创建 — combineReducers
 date: 2016-08-28 18:57:00 +08:00
+layout: post
 ---
 
 ## 伪代码
