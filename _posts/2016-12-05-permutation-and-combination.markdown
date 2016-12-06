@@ -1,6 +1,6 @@
 ---
 title: Permutation & Combination
-date: 2016-12-05 11:21:00 Z
+date: 2016-12-05 19:21:00 +08:00
 layout: post
 ---
 
@@ -41,6 +41,6 @@ function C(arr, n) {
   return ret
 }
 
-const r = A([1, 2, 3, 4], 2)
+const r = C([1, 2, 3, 4], 2)
 console.log(r)
 ```
