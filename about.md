@@ -1,5 +1,5 @@
 ---
-title: 我
+title: About
 permalink: "/about/"
 layout: page
 ---
