@@ -1,6 +1,9 @@
 ---
 title: Permutation & Combination
 date: 2016-12-05 19:21:00 +08:00
+tags:
+- javascript
+- algorithm
 layout: post
 ---
 
