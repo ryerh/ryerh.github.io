@@ -92,7 +92,7 @@ def createStore(reducer, preloadedState, enhancer)
 
 ## 源码
 
-```
+```js
 import isPlainObject from 'lodash/isPlainObject'
 import $$observable from 'symbol-observable'
 /**
