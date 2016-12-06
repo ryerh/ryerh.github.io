@@ -1,0 +1,50 @@
+---
+title: 用 Lerna 管理 Nodejs 项目
+date: 2016-09-30 19:10:00 +08:00
+---
+
+## 安装 Lerna
+```bash
+~$ npm i -g lerna
+```
+
+## 初始化项目
+```bash
+~$ mkdir lerna-repo && cd lerna-repo
+lerna-repo$ lerna init
+lerna-repo/
+  packages/
+  package.json
+  lerna.json
+```
+
+## 创建子项目 A
+```bash
+~lerna-repo$ mkdir packages/proj-A && cd packages/proj-A
+proj-A$ npm init
+```
+
+## 创建子项目 B
+同 A
+
+## 清理依赖包
+```bash
+proj-A$ cd ~/lerna-repo
+lerna-repo$ lerna clean --yes
+```
+
+## 安装、链接依赖包
+```bash
+lerna-repo$ lerna bootstrap --yes
+```
+
+## 注意事项
+每个子项目的 package.json 必须正确填写 name、version，否则 lerna 命令将报错
+尽可能所有子项目之间重复的 devDependencies 提取到 lerna-repo/package.json 中，可以加快速度，节省空间
+
+执行 lerna bootstrap --yes 之后，子项目之间互相引用的调用方式跟调用一个 node_modules 的 package 没有区别
+ 
+## 特殊问题
+执行 lerna bootstrap 会自动执行 npm install，极有可能因为网络差、或者依赖包本身等问题导致 npm install 失败，
+
+因此推荐先执行 npm config set registry https://registry.npmjs.org
