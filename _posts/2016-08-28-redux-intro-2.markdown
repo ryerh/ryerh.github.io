@@ -1,5 +1,5 @@
 ---
-title: 中间件的侵入 — compose & applyMiddleware
+title: Redux 源码 - 中间件的侵入
 date: 2016-08-28 18:59:00 +08:00
 layout: post
 ---
