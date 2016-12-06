@@ -88,7 +88,7 @@ def createStore(reducer, preloadedState, enhancer)
 最后在 createStore 的末尾，dispatch 了一次初始化 action。
  
 『总结』
-这里比较有意思的是 createStore 跟 enhancer 相互配合生成 store 示例的过程，一个互相调用的小嵌套，激情四射。
+这里比较有意思的是 createStore 跟 enhancer 相互配合生成 store 示例的过程，一个互相调用的小嵌套，有点绕。
 
 ## 源码
 
