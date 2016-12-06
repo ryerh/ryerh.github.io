@@ -1,5 +1,5 @@
 ---
-title: 根 Reducer 的创建 — combineReducers
+title: Redux 源码 - 根 Reducer 的创建
 date: 2016-08-28 18:57:00 +08:00
 layout: post
 ---
