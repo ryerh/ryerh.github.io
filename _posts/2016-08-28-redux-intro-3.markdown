@@ -1,5 +1,5 @@
 ---
-title: 终章 — createStore
+title: Redux 源码 - createStore - 终
 date: 2016-08-28 19:01:00 +08:00
 layout: post
 ---
