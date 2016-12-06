@@ -1,5 +1,5 @@
 ---
-title: Redux 源码解读 - 序
+title: Redux 源码 - 序
 date: 2016-08-28 18:00:00 +08:00
 layout: post
 ---
