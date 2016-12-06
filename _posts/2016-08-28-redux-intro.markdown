@@ -1,6 +1,7 @@
 ---
 title: Redux 源码解读 - 0
-date: 2016-11-15 18:54:00 +08:00
+date: 2016-08-28 18:00:00 +08:00
+layout: post
 ---
 
 Redux 的源码实现非常精要，只有 400 余行代码，其强大之处在于结合了 middleware 机制和 Observable 机制，给拓展 Redux 带来无限可能。
