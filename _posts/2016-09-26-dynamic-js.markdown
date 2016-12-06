@@ -1,6 +1,6 @@
 ---
-title: undefined
-date: 2016-09-26 14:20:36 +08:00
+title: undefined is not a function
+date: 2016-09-26 14:20:00 +08:00
 categories:
 - js
 layout: post
