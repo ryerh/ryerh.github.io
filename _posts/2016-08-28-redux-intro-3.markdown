@@ -1,6 +1,7 @@
 ---
 title: 终章 — createStore
 date: 2016-08-28 19:01:00 +08:00
+layout: post
 ---
 
 ## 伪代码
