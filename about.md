@@ -4,16 +4,27 @@ permalink: "/about/"
 layout: page
 ---
 
-我是黄岩，<br>
-一个吃货，<br>
-自由程序员，<br>
-旅行爱好者。
+## About me:
 
-我是平原的一掊土，<br>
-我在大海边长大，<br>
-我攀登过最陡峭的山，<br>
-我曾单车穿越滇藏。
+I'm Reason Wong, 黄岩 in Chinese.<br/>
+and I am Chinese.<br/>
+I was born in a flat country,<br/>
+then grew up near the sea.<br/>
 
-我写博不为什么，<br>
-但有一天，<br>
-你会看见。
+I started programming since high school,<br/>
+I played with these languages(sort by time ASC)<br/>
+-> VB(enlightment)<br/>
+-> C++(almost forgotten)<br/>
+-> PHP(the best lol)<br/>
+-> JavaScript(mostly)<br/>
+-> Python(recently)
+
+This site is not really a blog for public readers,<br/>
+it's just my notes, posts, some series, balderdash, abracadabra.<br/>
+
+## About this blog:
+
+Hosted on: [Github Pages](https://pages.github.com/)<br/>
+Powerd by: [Jekyll](https://jekyllrb.com/)<br/>
+Color scheme by: [Monokai](http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/)<br/>
+Content managed by: [Siteleaf](https://manage.siteleaf.com)
