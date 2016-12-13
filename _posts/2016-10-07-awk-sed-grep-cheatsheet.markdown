@@ -5,11 +5,13 @@ layout: post
 ---
 
 ## Linux 下进行字符串操作最常用的三个命令：
+
 1. `awk` (检索)
 2. `sed` (编辑)
 3. `grep` (匹配)
 
 ## awk
+
 语法：
 
 ``` bash
@@ -17,19 +19,22 @@ $ awk [-F fs] [-v var=value] [-f progfile | 'prog'] [file ...]
 ```
 
 代码结构：
+
 ``` bash
-BEGIN { FS=":"; RS=";" } # 可选
+BEGIN { FS=":"; RS=";" }    # 可选
 { print 'Processing: ' $1 } # 必选
-END { print 'End: ' } # 可选
+END { print 'End: ' }       # 可选
 ```
 
 设置变量：
+
 ``` bash
 $ awk -v a='hello' -v b='world' 'BEGIN {print a ", " b}'
 hello, world
 ```
 
 指定字段分隔符：
+
 ``` bash
 $ echo "1:2:3" | awk -F: '{ print $1 "-" $2 "-" $3 }'
 $ echo "1:2:3" | awk -v FS=':' '{ print $1 "-" $2 "-" $3 }'
@@ -38,6 +43,7 @@ $ echo "1:2:3" | awk 'BEGIN { FS=":" } { print $1 "-" $2 "-" $3 }'
 ```
 
 指定过滤条件：
+
 ``` bash
 # 行匹配(/reg/)
 $ awk -F: '/^r/ {print $0}' /etc/passwd
@@ -46,6 +52,7 @@ $ awk -F: '$1 ~ /^r/ {print $0}' /etc/passwd
 ```
 
 输出控制：
+
 ``` bash
 # 所有列
 $ awk -F: '/^r/ {print $0}' /etc/passwd
@@ -60,12 +67,15 @@ $ awk -F: '/^r/ {print FNR $0}' /etc/passwd
 ```
 
 ## sed
+
 语法：
+
 ``` bash
 $ sed [-nefi] '[begin , end] s/regex/complex/'
 ```
 
 替换：
+
 ``` bash
 # 每行第一次匹配
 $ sed 's/r/R/' /etc/passwd
@@ -77,18 +87,21 @@ $ sed -e 's/r/R/' -e 's/o/O/' /etc/passwd
 ```
 
 插入：
+
 ``` bash
 $ sed '1a BOF' file.txt
 $ sed '$a EOF' file.txt
 ```
 
 删除：
+
 ``` bash
 $ sed '5, $d' /etc/passwd
 $ sed '/^root/d' /etc/passwd
 ```
 
 输出控制：
+
 ``` bash
 # 输出第 5 - 10 行
 $ sed '5, 10' /etc/passwd
@@ -99,18 +112,23 @@ $ sed -n 's/r/R/p' /etc/passwd
 ```
 
  直接修改文件：
+ 
 ``` bash
 $ sed -i 's/hello/HELLO/' hello.txt
 ```
 
-<h2 id="grep">grep</h2>
+## grep
+
 语法：
+
 ``` bash
 $ grep 'pattern' [file ...]
 ```
 
 ## 综上
+
 查找文件内容：
+
 ``` bash
 $ awk '/^root/ {print $0}' /etc/passwd # $0 或 {...} 都可以省略
 $ sed -n '/^root/p' /etc/passwd
@@ -118,6 +136,7 @@ $ grep '^root' /etc/passwd
 ```
 
 提取 IP 地址：
+
 ``` bash
 $ ifconfig en0 | awk '/inet / {print $2}'
 ```
