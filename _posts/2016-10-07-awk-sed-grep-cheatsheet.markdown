@@ -12,7 +12,7 @@ layout: post
 ## awk
 语法：
 
-``` shell
+``` bash
 $ awk [-F fs] [-v var=value] [-f progfile | 'prog'] [file ...]
 ```
 
