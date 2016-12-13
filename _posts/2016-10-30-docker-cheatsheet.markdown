@@ -5,7 +5,7 @@ layout: post
 ---
 
 ## 使用演示
-```bash
+``` bash
 $ docker run -it -P \
     --name dev-env \
     -v /Users/ryer/Developer:/root/shared \
