@@ -17,7 +17,7 @@ layout: post
 - A robot may not injure the human being.
 - A robot may not injure a human being or, through inaction, allow a human being to come to harm except where such orders would conflict with the Zero Law.
 - A robot must obey orders given it by human beings except where such orders would conflict with the Zero Law and the First Law.
-- A robot must protect its own existence as long as such protection does not conflict with the Zero Law、 the First and Second Law.
+- A robot must protect its own existence as long as such protection does not conflict with the Zero Law, the First and Second Law.
 
 **Three** Laws of Robotics, Isaac Asimov
 
