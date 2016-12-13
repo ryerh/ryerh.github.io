@@ -5,7 +5,7 @@ layout: post
 ---
 
 ## 使用演示
-```
+```bash
 $ docker run -it -P \
     --name dev-env \
     -v /Users/ryer/Developer:/root/shared \
@@ -14,13 +14,13 @@ $ docker run -it -P \
 ```
 
 ## 获得帮助
-```
+``` bash
 $ docker --help
 $ docker COMMAND --help
 ```
 
 ## 创建 & 运行
-```
+``` bash
 # 拉取镜像
 $ docker pull IMAGE_NAME[:TAG|@DIGEST]
 
@@ -47,7 +47,7 @@ $ docker restart CONTAINER_NAME
 ```
 
 ## 状态 & 信息
-```
+``` bash
 # 列出容器
 $ docker ps -a
 
@@ -64,7 +64,7 @@ $ docker inspect task TASK_NAME
 ```
 
 ## 网络管理
-```
+``` bash
 $ docker network ls
 $ docker network inspect NETWORK_NAME
 $ docker network disconnect NETWORK_NAME CONTAINER_NAME
@@ -73,7 +73,7 @@ $ docker network connect NETWORK_NAME CONTAINER_NAME
 ```
 
 ## 清理
-```
+``` bash
 $ docker rm CONTAINER_NAME
 $ docker rmi IMAGE_NAME
 ```
