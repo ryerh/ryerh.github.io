@@ -1,6 +1,6 @@
 ---
-title: Git 命令手册
-date: 2015-11-24 14:40:33 +08:00
+title: Git Cheat Sheet
+date: 2015-11-24 14:40:00 +08:00
 categories:
 - git
 layout: post
