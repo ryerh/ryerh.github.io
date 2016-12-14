@@ -1,8 +1,9 @@
 ---
-title: Tmux 快捷键 & 速查表
-date: 2016-04-11 17:14:01 +08:00
+title: Tmux Cheat Sheet
+date: 2016-04-11 17:14:00 +08:00
 categories:
 - linux
+- cheat sheet
 layout: post
 ---
 
