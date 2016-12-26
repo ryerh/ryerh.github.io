@@ -18,3 +18,11 @@ ANSIBLE_CONFIG
 ~/.ansible.cfg
 /etc/ansible/ansible.cfg
 ```
+
+## 文件内容
+```ini
+remote_user = root
+host_key_checking = False
+roles_path = ./roles
+host_file = ./inventories
+```
