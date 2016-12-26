@@ -24,5 +24,5 @@ ANSIBLE_CONFIG
 remote_user = root
 host_key_checking = False
 roles_path = ./roles
-host_file = ./inventories
+inventory = ./inventories/example
 ```
