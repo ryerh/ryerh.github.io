@@ -10,7 +10,7 @@ layout: post
 # Ansible 关键词
 [here](http://docs.ansible.com/ansible/playbooks_directives.html)
 
-# Ansible 配置文件
+# Ansible cfg
 ## 查找规则
 ```
 ANSIBLE_CONFIG
@@ -25,4 +25,11 @@ remote_user = root
 host_key_checking = False
 roles_path = ./roles
 inventory = ./inventories/example
+```
+
+## Ansible inventory
+```
+localhost              ansible_connection=local
+other1.example.com     ansible_connection=ssh        ansible_user=mpdehaan
+other2.example.com     ansible_connection=ssh        ansible_user=mdehaan
 ```
