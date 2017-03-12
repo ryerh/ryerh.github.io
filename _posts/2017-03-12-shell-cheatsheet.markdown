@@ -169,6 +169,9 @@ until [[ -n "" ]]; do
 done
 ```
 
+## select
+
+```shell
 select DAY in Mon Tue Wed Thu Fri Sat Sun; do
   case $DAY in
     Mon) echo "Today is Monday" ;;
