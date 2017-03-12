@@ -52,6 +52,7 @@ I got 3 args
 - `[[ "1" > "" ]]` 因为 `[[ ]]` 是 bash 的语法结构，所以不需要转义
 
 ## 逻辑测试
+
 param      | desc
 -----------|-----
 (e)        | ([ -n "hello" ])
@@ -60,6 +61,7 @@ e1 and e2  | [ -n "" -a -n "" ] 等价于 [ -n "" ] && [ -n "" ]
 e1 or e2   | [ -n "" -o -n "" ] 等价于 [ -n "" ] || [ -n "" ]
 
 ## 文件测试
+
 param      | desc
 -----------|-----
 -d FILE    | is directory
@@ -71,6 +73,7 @@ f1 -ot f2  | f1 older then f2
 ...        | man test
 
 ## 字符串测试
+
 param      | desc
 -----------|-----
 -z str     | len(str) == 0
@@ -84,6 +87,7 @@ s1 < s2    | s1 < s2
 ...        | man test
 
 ## 数字测试
+
 param      | desc
 -----------|-----
 n1 -eq n2  | algebraically ==
