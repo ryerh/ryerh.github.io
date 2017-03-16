@@ -4,6 +4,13 @@ date: 2017-03-17 02:31:00 +08:00
 layout: post
 ---
 
+## TL;DR
+
+- 此文是我的笔记，由于个人理解有限，会存在一定的错误
+- 只简述 Docker 文件系统的设计，不介绍 `UnionFS`
+- 讲述了如何从 `docker image ls` 显示的 `image_id` 查找所有与镜像有关的文件
+- 讲述了如何从 `docker ps -a` 显示的 `container_id` 查找所有与容器有关的文件
+
 ## 环境说明
 
 - 操作系统：`CentOS-7-1611, 3.10.0-514.el7.x86_64`（全新安装）
@@ -63,7 +70,7 @@ Status: Downloaded newer image for alpine:3.4
 
 第一个镜像 `alpine:3.4` 拉取完毕，因为 alpine 是**基础镜像**，所以它只有一层 `pullid(709515475419)`。镜像的摘要是 `sha256:39d4b2f8d3f37b…`。
 
-再次执行 `tree` 命令查看 Docker 软件目录内容如下（省略了深层的子级内容）：
+再次执行 `tree` 命令查看 Docker 软件目录内容如下：
 
 ```shell
 [root@localhost docker]# tree
@@ -87,6 +94,10 @@ Status: Downloaded newer image for alpine:3.4
 |       |-- layerdb
 |       |   |-- sha256
 |       |   |   `-- 9f8566ee5135862dd980160c27bd7721448a6f7f385bbb81f7f001f1b78a5fbf
+|       |   |       |-- cache-id
+|       |   |       |-- diff
+|       |   |       |-- size
+|       |   |       `-- tar-split.json.gz
 |       |   `-- tmp
 |       `-- repositories.json
 |-- network
@@ -177,7 +188,7 @@ alpine              3.4                 245f7a86c576        12 days ago         
 [root@localhost docker]# find -name 245f7a86c576*
 ./image/overlay/imagedb/content/sha256/245f7a86c576bd7e3bef9b88bd97debdc9a8b14c185da6a74bdf3e4be40ea86b
 
-[root@localhost docker]# find -name 245f7a86c576* | cat | python -m json.tool
+[root@localhost docker]# cat $(find -name 245f7a86c576*) | python -m json.tool
 {
     "architecture": "amd64",
     "config": {
@@ -277,7 +288,7 @@ alpine              3.4                 245f7a86c576        12 days ago         
 [root@localhost docker]# find -name 0ae090dba3ab*
 ./image/overlay/imagedb/content/sha256/0ae090dba3ab6fd0a02a5eaddc19abf6bb47b9cf1b1168bd27aabf6fac05b399
 
-[root@localhost docker]# find -name 0ae090dba3ab* | cat | python -m json.tool
+[root@localhost docker]# cat $(find -name 0ae090dba3ab*) | python -m json.tool
 {
     "architecture": "amd64",
     "author": "NGINX Docker Maintainers \"docker-maint@nginx.com\"",
@@ -446,22 +457,28 @@ diffid(sha256:9f8566ee51*)
 [root@localhost docker]# docker run --name nginx nginx:alpine touch /root/awesome-nginx.txt
 ```
 
-从 `containers` 目录开始追踪，一路搜寻容器的踪迹：
+从 `docker ps -a` 开始追踪，一路搜寻容器的踪迹：
 
 ```shell
-[root@localhost docker]# tree containers/
-containers/
-`-- 6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621
-    |-- 6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621-json.log
-    |-- checkpoints
-    |-- config.v2.json
-    |-- hostconfig.json
-    |-- hostname
-    |-- hosts
-    |-- resolv.conf
-    |-- resolv.conf.hash
-    `-- shm
-    
+[root@localhost sha256]# docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+6175f77e9d17        nginx:alpine        "touch /root/aweso..."   20 minutes ago      Exited (0) 20 minutes ago                       nginx
+
+[root@localhost docker]# find -name 6175f77e9d17* | head -n 1
+./containers/6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621
+
+[root@localhost docker]# tree ./containers/6175f77e9d170*
+./containers/6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621
+|-- 6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621-json.log
+|-- checkpoints
+|-- config.v2.json
+|-- hostconfig.json
+|-- hostname
+|-- hosts
+|-- resolv.conf
+|-- resolv.conf.hash
+`-- shm
+
 [root@localhost docker]# cat containers/6175f77e9d170376*/config.v2.json | python -m json.tool | grep \"ID\"
     "ID": "6175f77e9d170376e1a11d419774c76213f1ca966a804b12d3995436edb30621",
 
