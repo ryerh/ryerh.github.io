@@ -6,6 +6,7 @@ root = true
 charset = utf-8
 end_of_line = lf
 indent_size = 2
+tab_width = 2
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
@@ -15,3 +16,9 @@ quote_type = single
 curly_bracket_next_line = false
 spaces_around_operators = true
 continuation_indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
