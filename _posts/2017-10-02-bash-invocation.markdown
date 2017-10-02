@@ -9,7 +9,7 @@ layout: post
 - 特征：`$0` 参数以 `-` 打头
 - 启动：
   1. 执行 `/etc/profile`
-  2. 执行按照 `~/.bash_profile`、`~/.bash_login`、`~/.profile` 的顺序执行找到的第一个脚本
+  2. 执行以 `~/.bash_profile`、`~/.bash_login`、`~/.profile` 的顺序找到的第一个文件
   3. 指定 `--noprofile` 参数则不会预先执行任何文件
 - 退出：执行 `~/.bash_logout`
 
