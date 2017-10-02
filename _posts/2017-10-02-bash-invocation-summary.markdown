@@ -1,5 +1,5 @@
 ---
-title: Bash 的调用形式
+title: Bash 的调用形式总结
 date: 2017-10-02 14:39:00 +08:00
 layout: post
 ---
