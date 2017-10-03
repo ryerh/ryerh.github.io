@@ -17,7 +17,7 @@ curly_bracket_next_line = false
 spaces_around_operators = true
 continuation_indent_size = 2
 
-[*.md]
+[*.{md,markdown}]
 trim_trailing_whitespace = false
 
 [Makefile]
