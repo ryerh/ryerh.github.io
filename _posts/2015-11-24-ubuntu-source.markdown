@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 镜像
-date: 2015-11-24 14:48:20 +08:00
+date: 2015-11-24 14:48:00 +08:00
 categories:
 - ubuntu
 layout: post
@@ -8,26 +8,13 @@ layout: post
 
 # 使用说明
 
-以Wily(15.10)为例,
-编辑/etc/apt/sources.list文件,
-在文件最前面添加以下条目(操作前请做好相应备份)
+执行以下命令替换 `/etc/apt/sources.list` 文件：
 
 ``` bash
-deb http://mirrors.163.com/ubuntu/ wily main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ wily main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
+curl -o "/etc/apt/sources.list" "http://mirrors.163.com/.help/sources.list.$(grep -Po '(?<=DISTRIB_CODENAME=).*' /etc/lsb-release)"
 ```
 
-或者下载相应版本的sources.list,
-覆盖/etc/apt/sources.list即可(操作前请做好相应备份)
+或者下载相应版本的 `sources.list`：
 
 - lucid(10.04)
 - precise(12.04)
