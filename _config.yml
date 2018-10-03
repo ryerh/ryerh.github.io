@@ -4,6 +4,9 @@ title: RYER THE CATCHER
 description: H ♥︎ Z
 timezone: Asia/Shanghai
 collections:
+  pages:
+    title: Pages
+    output: true
   posts:
     title: Posts
     output: true

@@ -6,6 +6,6 @@ services:
     volumes:
       - $PWD:/srv/jekyll
     ports:
-      - 4000:4000
+      - 8800:4000
     command: jekyll serve
 
