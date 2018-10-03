@@ -1,7 +1,7 @@
 ---
 title: Python + epoll 非阻塞服务器
 date: 2018-09-30 20:45:00 +08:00
-layout: page
+layout: post
 ---
 
 阻塞式服务器

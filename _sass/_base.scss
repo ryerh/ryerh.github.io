@@ -139,7 +139,6 @@ blockquote {
 pre,
 code {
   font-family: $font-family-monospace;
-  font-weight: 300;
   background-color: $high-light;
   border-radius: 3px;
 }
@@ -167,6 +166,7 @@ pre {
 .gutter pre {
   margin-bottom: 0;
 }
+
 
 /**
  * Wrapper

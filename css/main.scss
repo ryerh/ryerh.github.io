@@ -1,4 +1,6 @@
 ---
+title: main.css
+syntax_hl: gem install rouge && rougify style monokai.sublime > xxx.scss
 ---
 
 @charset "utf-8";
@@ -27,7 +29,7 @@ $font-family-base:       $font-family-sans-serif !default;
 // Our variables
 $base-font-family: $font-family-sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 300;
+$base-font-weight: normal;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -55,16 +57,19 @@ $on-laptop:        1024px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
-
+@mixin media-query-min($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "base",
-    "layout",
-    "syntax-highlighting"
+  "base",
+  "layout",
+  "syntax-highlighting"
 ;

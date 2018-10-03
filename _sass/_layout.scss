@@ -12,7 +12,6 @@
 
 .site-title {
   font-size: 26px;
-  font-weight: 300;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -176,6 +175,18 @@
   }
 }
 
+
+@include media-query-min($on-palm) {
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      flex: 1 1 50%;
+    }
+  }
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
@@ -234,20 +245,5 @@
 
   p {
     text-align: justify;
-  }
-}
-
-.layout-post {
-  & > header,
-  & > footer {
-    border-color: transparent;
-
-    & * {
-      visibility: hidden;
-    }
-
-    &:hover .site-title {
-      visibility: visible;
-    }
   }
 }
