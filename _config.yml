@@ -1,5 +1,7 @@
 ---
+url: http://ryerh.com
 title: RYER THE CATCHER
+description: H ♥︎ Z
 timezone: Asia/Shanghai
 collections:
   posts:
@@ -8,12 +10,3 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: ryerh@live.com
-address: Beijing, China
-description: H ♥︎ Z
-baseurl: 
-url: http://ryerh.com
-twitter_username: ryerwong
-github_username: ryerh
-disqus_shorname: ryerh
-markdown: kramdown

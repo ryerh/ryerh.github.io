@@ -6,11 +6,11 @@
         <ul class="contact-list">
           <li>
             <i class="fa fa-map-marker"></i>
-            {{ site.address }}
+            {{ site.data.profile.address }}
           </li>
           <li>
             <i class="fa fa-inbox"></i>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
           </li>
         </ul>
       </div>
@@ -19,14 +19,14 @@
         <ul class="social-media-list">
           <li>
             <i class="fa fa-github"></i>
-            <a href="https://github.com/{{ site.github_username }}" target="_blank">
-              {{ site.github_username }}
+            <a href="https://github.com/{{ site.data.profile.github_username }}" target="_blank">
+              {{ site.data.profile.github_username }}
             </a>
           </li>
           <li>
             <i class="fa fa-twitter"></i>
-            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-              {{ site.twitter_username }}
+            <a href="https://twitter.com/{{ site.data.profile.twitter_username }}" target="_blank">
+              {{ site.data.profile.twitter_username }}
             </a>
           </li>
         </ul>
