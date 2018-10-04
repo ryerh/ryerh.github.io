@@ -1,6 +1,6 @@
 ---
 title: main.css
-syntax_hl: gem install rouge && rougify style monokai.sublime > xxx.scss
+docker_cmd: /usr/gem/bin/rougify style monokai.sublime > xxx.scss
 ---
 
 @charset "utf-8";
